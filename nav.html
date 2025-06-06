@@ -36,6 +36,12 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог 2
+        </a>
         <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
             Карточка товара
         </a>
@@ -66,6 +72,9 @@
         <a href="order-reg.html" style="display: block; margin-bottom: 20px;">
             Оформление заказа
         </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
         <a href="contacts.html" style="display: block; margin-bottom: 20px;">
             Контакты
         </a>
@@ -79,9 +88,9 @@
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="orderModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оформление заказа
+        </button>
 
 
     </div>
@@ -92,17 +101,177 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal order-modal" id="orderModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
-                </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="h3">
+                Оформление заказа
             </div>
+            <div class="order-modal__items">
+                <div class="order-item">
+                    <div class="order-item__info">
+                        <div class="order-item__img">
+                            <img src="img/gallery.webp" alt="">
+                        </div>
+                        <div class="order-item__text text14">
+                            Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Autolider MB17-0503-KK8
+                        </div>
+                    </div>
+                    <div class="order-item__action">
+                        <div class="order-item__prices">
+                            <div class="order-item__price h5">
+                                7 690 ₽
+                            </div>
+                        </div>
+                        <div class='cartcalc'>
+                            <button class='ccalc-minus'>
+                                <img src="img/minus2.svg" alt="">
+                            </button>
+                            <input type='text' value='1'>
+                            <button class='ccalc-plus'>
+                                <img src="img/plus2.svg" alt="">
+                            </button>
+                        </div>
+
+                        <button class="order-item__remove">
+                            <img src="img/delete.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="order-form">
+                <div class="order-form__group">
+                    <div class="h5">
+                        1. Данные покупателя
+                    </div>
+                    <div class="order-form__grid">
+                        <div class="fg">
+                            <input type="text" placeholder="Фамилия и имя">
+                        </div>
+                        <div class="fg">
+                            <input type="tel" placeholder="Контактный телефон">
+                        </div>
+                    </div>
+                </div>
+                <div class="order-form__group">
+                    <div class="h5">
+                        2. Способ получения
+                    </div>
+                    <div class="order-form__grid">
+                        <div class="custom-radio">
+                            <input data-value="_self" checked type="radio" name="delivery-way">
+                            <div class="custom-radio__icon"></div>
+                            <div class="custom-radio__top">
+                                <div class="text16 bold-text">
+                                    Пункт выдачи
+                                </div>
+                                <img src="img/boxberry3.svg" alt="">
+                            </div>
+                            <div class="custom-radio__desc text14 gray-text">
+                                Бесплатно
+                            </div>
+                        </div>
+                        <div class="custom-radio">
+                            <input data-value="_carrier" type="radio" name="delivery-way">
+                            <div class="custom-radio__icon"></div>
+                            <div class="custom-radio__top">
+                                <div class="text16 bold-text">
+                                    Курьером
+                                </div>
+                                <img src="img/boxberry3.svg" alt="">
+                            </div>
+                            <div class="custom-radio__desc text14 gray-text">
+                                Бесплатно
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form__variant _active" data-val="_self">
+                        <div class="order-form__map">
+                            <img src="img/map.webp" alt="">
+                        </div>
+                        <div class="order-form__hint gray-text">
+                            <img src="img/hint2.svg" alt="">
+                            <div class="text14">
+                                Пункт выдачи уточняется при согласовании заказа менеджером или в переписке вацап
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-form__variant" data-val="_carrier">
+                        <div class="fg">
+                            <input type="text" placeholder="Адрес доставки">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="order-form__group">
+                    <div class="h5">
+                        3. Способ оплаты
+                    </div>
+                    <div class="order-form__grid">
+                        <div class="custom-radio custom-radio2">
+                            <input checked type="radio" name="pay-way">
+                            <div class="custom-radio__icon"></div>
+                            <div class="custom-radio__top">
+                                <div class="text16 bold-text">
+                                    При получении
+                                </div>
+                            </div>
+                            <div class="custom-radio__desc text14 gray-text">
+                                Наличными или картой при получении
+                            </div>
+                        </div>
+                        <div class="custom-radio custom-radio2">
+                            <input type="radio" name="pay-way">
+                            <div class="custom-radio__icon"></div>
+                            <div class="custom-radio__top">
+                                <div class="text16 bold-text">
+                                    Онлайн
+                                </div>
+                                <div class="custom-radio__icons">
+                                    <img src="img/visa.svg" alt="">
+                                    <img src="img/mc.svg" alt="">
+                                    <img src="img/mir.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="custom-radio__desc text14 gray-text">
+                                Банковской картой
+                            </div>
+                        </div>
+                        <div class="custom-radio custom-radio2">
+                            <input type="radio" name="pay-way">
+                            <div class="custom-radio__icon"></div>
+                            <div class="custom-radio__top">
+                                <div class="text16 bold-text">
+                                    СБП
+                                </div>
+                                <div class="custom-radio__icons">
+                                    <img src="img/sbp.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="custom-radio__desc text14 gray-text">
+                                Оплата по QR-коду
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fg">
+                    <input type="text" placeholder="Комментарий к заказу">
+                </div>
+                <div class="h4 order-form__sum">Итого: 7 690 ₽</div>
+                <div class="_flex">
+                    <button class="m-btn m-btn-green">
+                        <span>Подтвердить заказ</span>
+                    </button>
+                </div>
+                <div class="text14 gray-text">
+                    Нажимая кнопку «Подтвердить заказ», я даю свое согласие на сбор и обработку моих персональных данных в соответствии с
+                    <a href="" class="green-text">Политикой конфиденциальности</a> .
+                </div>
+            </form>
         </div>
     </div>
 

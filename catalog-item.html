@@ -20,17 +20,612 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__inner">
-                    <a href="" class="header__logo">
-                        <!--            <img src="img/logo.svg" alt="">-->
-                    </a>
+                <div class="header-top">
+                    <div class="header-top__nav">
+                        <a href="" class="header-top__logo header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
 
-                    <div class="menu">
+                        <button class="header-top__close _toggle-menu green-text">
+                            <span class="text15">Закрыть</span>
+                            <img src="img/close2.svg" alt="">
+                        </button>
+
+                        <button class="header-top__back green-text">
+                            <span class="text15">Назад</span>
+                            <img src="img/back.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header-top__inner">
+                        <div class="header-city">
+                            <div class="header-city__show">
+                                <img src="img/location.svg" alt="">
+                                <span class="text14">Москва</span>
+                            </div>
+                        </div>
+
+                        <form class="header-search">
+                            <input type="text" placeholder="Поиск">
+                            <button class="header-search__btn">
+                                <img src="img/search-icon.svg" alt="">
+                            </button>
+                        </form>
+
+                        <button class="_toggle-catalog2 catalog-btn m-btn m-btn-green">
+                            <img src="img/burger.svg" alt="">
+                            <span>Каталог товаров</span>
+                        </button>
+
                         <nav class="nav">
-                            <a href="" class="nav__link"></a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Онлайн-подбор</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <img src="img/percent.svg" alt="">
+                                <span class="text14">Скидки и акции</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">О Компании</span>
+                            </a>
+                            <div class="nav-item">
+                                <div class="nav-item__top">
+                                    <span class="text14">Покупателю</span>
+                                </div>
+                                <div class="nav-item__bottom">
+                                    <div class="nav-item__inner">
+                                        <ul class="nav-item__list">
+                                            <li><a href="">Доставка</a></li>
+                                            <li><a href="">Самовывоз</a></li>
+                                            <li><a href="">Оплата заказа</a></li>
+                                            <li><a href="">Оформление заказа</a></li>
+                                            <li><a href="">Возврат и гарантия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="nav__link">
+                                <span class="text14">Отзывы</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Блог</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Контакты</span>
+                            </a>
                         </nav>
                     </div>
                 </div>
+                <div class="header-bottom">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header-bottom__col _flex">
+                        <button class="_toggle-catalog catalog-btn m-btn m-btn-green">
+                            <img src="img/burger.svg" alt="">
+                            <span>Каталог товаров</span>
+                        </button>
+                        <div class="header-bottom__info text14 gray-text">
+                            Официальный сайт ателье «ЛетоАвто»
+                        </div>
+                    </div>
+                    <div class="header-contacts">
+                        <div class="header-contacts__time text14 gray-text">
+                            пн-вс с 9 до 20 часов
+                        </div>
+                        <a href="tel:89383597587" class="header-contacts__phone h5">
+                            8 (938) 359-75-87
+                        </a>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/wb.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ozon.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ym.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="header-mob">
+                        <div class="h5">
+                            8 (938) 359-75-87
+                        </div>
+                        <a href="" class="socials__item">
+                            <img src="img/whatsapp2.svg" alt="">
+                        </a>
+                        <button class="burger _toggle-menu">
+                            <img src="img/burger2.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="header-catalog">
+                        <div class="header-catalog__grid">
+                            <div class="header-catalog__col">
+                                <div class="header-catalog__items">
+                                    <div class="header-catalog__item" data-id="1">
+                                        <span class="text16">Audi</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="2">
+                                        <span class="text16">BMW</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="3">
+                                        <span class="text16">Brilliance</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="4">
+                                        <span class="text16">BYD</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="5">
+                                        <span class="text16">Chery</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="6">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="7">
+                                        <span class="text16">Citroen</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="8">
+                                        <span class="text16">Daewoo</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="9">
+                                        <span class="text16">Brilliance</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="10">
+                                        <span class="text16">BYD</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="11">
+                                        <span class="text16">Chery</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="12">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="13">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="14">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="15">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="16">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-catalog__col2">
+                                <div class="submenu _active" data-id="1">
+                                    <div class="h4">
+                                        Audi
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="2">
+                                    <div class="h4">
+                                        BMW
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="3">
+                                    <div class="h4">
+                                        Brilliance
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="4">
+                                    <div class="h4">
+                                        BYD
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="5">
+                                    <div class="h4">
+                                        Chery
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="6">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="7">
+                                    <div class="h4">
+                                        Citroen
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="8">
+                                    <div class="h4">
+                                        Daewoo
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="9">
+                                    <div class="h4">
+                                        Brilliance
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="10">
+                                    <div class="h4">
+                                        BYD
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="11">
+                                    <div class="h4">
+                                        Chery
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="12">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="13">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="14">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="15">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="16">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="header-catalog__col3">
+                                <div class="header-cheaper">
+                                    <img src="img/rouble.svg" alt="">
+                                    <div class="header-cheaper__text">
+                                        <div class="header-cheaper__title">
+                                            На 10-20% дешевле,  чем на маркетплейсах
+                                        </div>
+                                        <div class="header-cheaper__desc text14">
+                                            Без наценки посредников <br>и агентсткой комисси маркетплейсов
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-boxberry">
+                                    <div class="about-boxberry__top">
+                                        <div class="about-boxberry__title">
+                                            Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                        </div>
+                                        <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
+                                    </div>
+                                    <div class="about-boxberry__bottom">
+                                        <div class="about-boxberry__props">
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon8.svg" alt="">
+                                                <span class="text14 gray-text">Отправка в день заказа</span>
+                                            </div>
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon9.svg" alt="">
+                                                <span class="text14 gray-text">Бесплатная доставка</span>
+                                            </div>
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon10.svg" alt="">
+                                                <span class="text14 gray-text">Оплата при получении</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bg _toggle-catalog"></div>
             </div>
 
         </header>
@@ -47,6 +642,377 @@
                     </div>
                     <div class="catalog-item__grid">
                         <div class="catalog-item__col">
+                            <div class="product-top">
+                                <div class="product-top__col">
+                                    <div class="gallery">
+                                        <div class="gallery__big">
+                                            <div class="swiper mySwiper2">
+                                                <div class="swiper-wrapper gallery-group">
+                                                    <div class="swiper-slide">
+                                                        <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/gallery.webp" class="gallery__img" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="videos/Countdown7.mp4" class="gallery__img _video" data-fancybox="@@album">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__small">
+                                            <div thumbsSlider class="swiper mySwiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery__img _video">
+                                                            <img src="img/gallery.webp" alt="Галлерея">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="product-top__col2">
+                                    <div class="product-top__title h2 h4-mob">
+                                        Чехлы Chevrolet Captiva 2006-2013 серый алькантара
+                                    </div>
+                                    <div class="product-color">
+                                        <div class="product-color__title text14">
+                                            <span class="gray-text">Цвет:</span>
+                                            <span class="_js-color-output">Черный</span>
+                                        </div>
+                                        <div class="product-color__items">
+                                            <div class="color-radio">
+                                                <input data-value="Черный" type="radio" name="color" checked>
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Красный" type="radio" name="color">
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Зелёный" type="radio" name="color">
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Синий" type="radio" name="color">
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Белый" type="radio" name="color">
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Серый" type="radio" name="color">
+                                                <div class="color-radio__img">
+
+                                                    <img src="img/color-img.webp" alt="">
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button data-modal="colorModal" class="product-color__more text14 green-text underline-text">
+                                            Все 12 цветов
+                                        </button>
+                                    </div>
+                                    <div class="product-material">
+                                        <div class="product-color__title text14">
+                                            <span class="gray-text">Материал:</span>
+                                            <span class="_js-material-output">Алькантара</span>
+                                        </div>
+                                        <div class="product-color__items">
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара" type="radio" name="material" checked>
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 2" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 3" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 4" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 5" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-use">
+                                        <img src="img/car.png" alt="" class="product-use__img">
+                                        <div class="product-use__title text15 semi-bold-text">
+                                            Применимость
+                                        </div>
+                                        <div class="product-use__desc text13">
+                                            Chevrolet Captiva
+                                        </div>
+                                        <div class="product-use__prop">
+                                            <div class="product-use__prop-title">
+                                                Комплектация:
+                                            </div>
+                                            <div class="product-use__prop-desc">
+                                                LT 5 мест
+                                            </div>
+                                        </div>
+                                        <div class="product-use__prop">
+                                            <div class="product-use__prop-title">
+                                                Годы выпуска:
+                                            </div>
+                                            <div class="product-use__prop-desc">
+                                                2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-sidebar">
+                                        <div class="product-sidebar__inner">
+                                            <div class="product-cart">
+                                                <div class="product-cart__title text14 gray-text">
+                                                    Цена за комплект
+                                                </div>
+                                                <div class="product-cart__prices">
+                                                    <div class="product-cart__price h3">
+                                                        7 690 ₽
+                                                    </div>
+                                                    <div class="product-cart__price2">
+                                                        8 690
+                                                    </div>
+                                                </div>
+                                                <div class="product-cart__nav _flex">
+                                                    <button class="product-cart__btn m-btn m-btn-green">
+                                                        <img src="img/cart.svg" alt="">
+                                                        <span>Заказать</span>
+                                                    </button>
+                                                    <button class="favourite-btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20" fill="none">
+                                                            <path opacity="0.4" d="M11.5396 20L9.94455 18.5613C4.27955 13.4714 0.539551 10.1035 0.539551 5.99455C0.539551 2.6267 3.20155 0 6.58955 0C8.50355 0 10.3406 0.882834 11.5396 2.26703C12.7386 0.882834 14.5756 0 16.4896 0C19.8776 0 22.5396 2.6267 22.5396 5.99455C22.5396 10.1035 18.7996 13.4714 13.1346 18.5613L11.5396 20Z" fill="#979797"></path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="about-boxberry__props">
+                                                    <div class="about-boxberry__prop">
+                                                        <img src="img/prop-icon11.svg" alt="">
+                                                        <span class="text14 gray-text">Есть на складе</span>
+                                                    </div>
+                                                    <div class="about-boxberry__prop">
+                                                        <img src="img/prop-icon11.svg" alt="">
+                                                        <span class="text14 gray-text">Гарантия 1 год</span>
+                                                    </div>
+                                                    <div class="about-boxberry__prop">
+                                                        <img src="img/prop-icon12.svg" alt="">
+                                                        <span class="text14 gray-text">10 дней на возврат и обмен  </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="about-marketplaces">
+                                                <div class="about-marketplaces__top">
+                                                    <div class="about-marketplaces__title">
+                                                        На 10-20% дешевле, <br>чем на маркетплейсах
+                                                    </div>
+                                                    <div class="about-marketplaces__desc text14 gray-text">
+                                                        Посмотрите этот товар на маркетплейсах и убедитесь сами
+                                                    </div>
+                                                </div>
+                                                <div class="about-marketplaces__items">
+                                                    <div class="about-marketplaces__item about-marketplaces__item--wb">
+                                                        <span>WB</span>
+                                                    </div>
+                                                    <div class="about-marketplaces__item about-marketplaces__item--ozon">
+                                                        <span>Ozon</span>
+                                                    </div>
+                                                    <div class="about-marketplaces__item about-marketplaces__item--ym">
+                                                        <span>ЯМаркет</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="about-boxberry">
+                                                <div class="about-boxberry__top">
+                                                    <div class="about-boxberry__title">
+                                                        Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                                    </div>
+                                                    <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
+                                                </div>
+                                                <div class="about-boxberry__bottom">
+                                                    <div class="about-boxberry__props">
+                                                        <div class="about-boxberry__prop">
+                                                            <img src="img/prop-icon8.svg" alt="">
+                                                            <span class="text14 gray-text">Отправка в день заказа</span>
+                                                        </div>
+                                                        <div class="about-boxberry__prop">
+                                                            <img src="img/prop-icon9.svg" alt="">
+                                                            <span class="text14 gray-text">Бесплатная доставка</span>
+                                                        </div>
+                                                        <div class="about-boxberry__prop">
+                                                            <img src="img/prop-icon10.svg" alt="">
+                                                            <span class="text14 gray-text">Оплата при получении</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-share">
+                                                <div class="text14 gray-text">
+                                                    Поделиться
+                                                </div>
+                                                <div class="product-share__items">
+                                                    <a href="" class="product-share__item">
+                                                        <img src="img/social.svg" alt="">
+                                                    </a>
+                                                    <a href="" class="product-share__item">
+                                                        <img src="img/social2.svg" alt="">
+                                                    </a>
+                                                    <a href="" class="product-share__item">
+                                                        <img src="img/social3.svg" alt="">
+                                                    </a>
+                                                    <a href="" class="product-share__item">
+                                                        <img src="img/social4.svg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-advantages">
+                                        <ul class="product-advantages__items">
+                                            <li>
+                                                <div class="text14">
+                                                    Самостоятельная быстрая установка <br>
+                                                    <span class="gray-text">Есть видеоинструкция</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="text14">Точная посадка без зазоров, перекосов, складов и растяжек</div>
+                                            </li>
+                                            <li>
+                                                <div class="text14">Продуманы все отверстия для регулировку сидений и ручек откидывания</div>
+                                            </li>
+                                            <li>
+                                                <div class="text14">Чехол не мешает установке и надежной фиксации детских кресел</div>
+                                            </li>
+                                            <li>
+                                                <div class="text14">Гипоаллергенные материалы не вызывают раздражения кожи даже у маленьких детей</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="examples">
                                 <div class="h2">
                                     Примеры <span class="_no-wrap">установленных чехлов</span>
@@ -1130,6 +2096,145 @@
 
         </footer>
     </div>
+
+    <div class="modal color-modal" id="colorModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="product-color__title text14">
+                <span class="gray-text">Цвет:</span>
+                <span class="_js-color-output">Черный</span>
+            </div>
+            <div class="color-modal__items">
+                <div class="color-radio">
+                    <input data-value="Черный" type="radio" name="color2" checked>
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Красный" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Зелёный" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Синий" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Белый" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Серый" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Черный 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Красный 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Зелёный 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Синий 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Белый 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+                <div class="color-radio">
+                    <input data-value="Серый 2" type="radio" name="color2">
+                    <div class="color-radio__img">
+
+                        <img src="img/color-img.webp" alt="">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="_close-modal color-modal__btn m-btn m-btn-green">
+                <span>Выбрать</span>
+            </button>
+        </div>
+    </div>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/fancybox.umd.js"></script>

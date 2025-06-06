@@ -20,27 +20,1307 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__inner">
-                    <a href="" class="header__logo">
-                        <!--            <img src="img/logo.svg" alt="">-->
-                    </a>
+                <div class="header-top">
+                    <div class="header-top__nav">
+                        <a href="" class="header-top__logo header__logo">
+                            <img src="img/logo.svg" alt="">
+                        </a>
 
-                    <div class="menu">
+                        <button class="header-top__close _toggle-menu green-text">
+                            <span class="text15">Закрыть</span>
+                            <img src="img/close2.svg" alt="">
+                        </button>
+
+                        <button class="header-top__back green-text">
+                            <span class="text15">Назад</span>
+                            <img src="img/back.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="header-top__inner">
+                        <div class="header-city">
+                            <div class="header-city__show">
+                                <img src="img/location.svg" alt="">
+                                <span class="text14">Москва</span>
+                            </div>
+                        </div>
+
+                        <form class="header-search">
+                            <input type="text" placeholder="Поиск">
+                            <button class="header-search__btn">
+                                <img src="img/search-icon.svg" alt="">
+                            </button>
+                        </form>
+
+                        <button class="_toggle-catalog2 catalog-btn m-btn m-btn-green">
+                            <img src="img/burger.svg" alt="">
+                            <span>Каталог товаров</span>
+                        </button>
+
                         <nav class="nav">
-                            <a href="" class="nav__link"></a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Онлайн-подбор</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <img src="img/percent.svg" alt="">
+                                <span class="text14">Скидки и акции</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">О Компании</span>
+                            </a>
+                            <div class="nav-item">
+                                <div class="nav-item__top">
+                                    <span class="text14">Покупателю</span>
+                                </div>
+                                <div class="nav-item__bottom">
+                                    <div class="nav-item__inner">
+                                        <ul class="nav-item__list">
+                                            <li><a href="">Доставка</a></li>
+                                            <li><a href="">Самовывоз</a></li>
+                                            <li><a href="">Оплата заказа</a></li>
+                                            <li><a href="">Оформление заказа</a></li>
+                                            <li><a href="">Возврат и гарантия</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="nav__link">
+                                <span class="text14">Отзывы</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Блог</span>
+                            </a>
+                            <a href="" class="nav__link">
+                                <span class="text14">Контакты</span>
+                            </a>
                         </nav>
                     </div>
                 </div>
+                <div class="header-bottom">
+                    <a href="" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header-bottom__col _flex">
+                        <button class="_toggle-catalog catalog-btn m-btn m-btn-green">
+                            <img src="img/burger.svg" alt="">
+                            <span>Каталог товаров</span>
+                        </button>
+                        <div class="header-bottom__info text14 gray-text">
+                            Официальный сайт ателье «ЛетоАвто»
+                        </div>
+                    </div>
+                    <div class="header-contacts">
+                        <div class="header-contacts__time text14 gray-text">
+                            пн-вс с 9 до 20 часов
+                        </div>
+                        <a href="tel:89383597587" class="header-contacts__phone h5">
+                            8 (938) 359-75-87
+                        </a>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/wb.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ozon.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/ym.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="header-mob">
+                        <div class="h5">
+                            8 (938) 359-75-87
+                        </div>
+                        <a href="" class="socials__item">
+                            <img src="img/whatsapp2.svg" alt="">
+                        </a>
+                        <button class="burger _toggle-menu">
+                            <img src="img/burger2.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="header-catalog">
+                        <div class="header-catalog__grid">
+                            <div class="header-catalog__col">
+                                <div class="header-catalog__items">
+                                    <div class="header-catalog__item" data-id="1">
+                                        <span class="text16">Audi</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="2">
+                                        <span class="text16">BMW</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="3">
+                                        <span class="text16">Brilliance</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="4">
+                                        <span class="text16">BYD</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="5">
+                                        <span class="text16">Chery</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="6">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="7">
+                                        <span class="text16">Citroen</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="8">
+                                        <span class="text16">Daewoo</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="9">
+                                        <span class="text16">Brilliance</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="10">
+                                        <span class="text16">BYD</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="11">
+                                        <span class="text16">Chery</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="12">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="13">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="14">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="15">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                    <div class="header-catalog__item" data-id="16">
+                                        <span class="text16">Chevrolet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-catalog__col2">
+                                <div class="submenu _active" data-id="1">
+                                    <div class="h4">
+                                        Audi
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="2">
+                                    <div class="h4">
+                                        BMW
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="3">
+                                    <div class="h4">
+                                        Brilliance
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="4">
+                                    <div class="h4">
+                                        BYD
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="5">
+                                    <div class="h4">
+                                        Chery
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="6">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="7">
+                                    <div class="h4">
+                                        Citroen
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="8">
+                                    <div class="h4">
+                                        Daewoo
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="9">
+                                    <div class="h4">
+                                        Brilliance
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="10">
+                                    <div class="h4">
+                                        BYD
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="11">
+                                    <div class="h4">
+                                        Chery
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="12">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="13">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="14">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="15">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="submenu" data-id="16">
+                                    <div class="h4">
+                                        Chevrolet
+                                    </div>
+                                    <ul class="submenu__items">
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Auris</a></li>
+                                        <li><a href="">Avensis</a></li>
+                                        <li><a href="">C-HR</a></li>
+                                        <li><a href="">Camry</a></li>
+                                        <li><a href="">Fortuner</a></li>
+                                        <li><a href="">Highlander</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                        <li><a href="">Land Cruiser Prado</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="header-catalog__col3">
+                                <div class="header-cheaper">
+                                    <img src="img/rouble.svg" alt="">
+                                    <div class="header-cheaper__text">
+                                        <div class="header-cheaper__title">
+                                            На 10-20% дешевле,  чем на маркетплейсах
+                                        </div>
+                                        <div class="header-cheaper__desc text14">
+                                            Без наценки посредников <br>и агентсткой комисси маркетплейсов
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-boxberry">
+                                    <div class="about-boxberry__top">
+                                        <div class="about-boxberry__title">
+                                            Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                        </div>
+                                        <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
+                                    </div>
+                                    <div class="about-boxberry__bottom">
+                                        <div class="about-boxberry__props">
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon8.svg" alt="">
+                                                <span class="text14 gray-text">Отправка в день заказа</span>
+                                            </div>
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon9.svg" alt="">
+                                                <span class="text14 gray-text">Бесплатная доставка</span>
+                                            </div>
+                                            <div class="about-boxberry__prop">
+                                                <img src="img/prop-icon10.svg" alt="">
+                                                <span class="text14 gray-text">Оплата при получении</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bg _toggle-catalog"></div>
             </div>
 
         </header>
         <main class="content">
 
+            <div class="main">
+                <div class="container">
+                    <div class="main-slider slider _loop">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="main-card">
+                                        <div class="main-card__img m-backdrop">
+                                            <img src="img/main.webp" alt="">
+                                        </div>
+                                        <div class="main-card__content">
+                                            <div class="main-card__reviews _flex">
+                                                <div class="rating">
+                                                    <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                        <div class="rating-input__item" data-rating-value="5">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="4">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <input class="rating-input__field" type="number" value="0">
 
-            <!--            "img":"blog",-->
-            <!--            "title":"",-->
-            <!--            "desc":"",-->
-            <!--            })-->
+
+                                                    </div>
+                                                </div>
+                                                <div class="text14">
+                                                    1 000+ отзывов
+                                                </div>
+                                            </div>
+                                            <div class="h2 h4-mob">
+                                                120 000 модельных авточехлов с доставкой  <span class="_no-wrap">в Москву</span>
+                                                <span class="main-card__subtitle">на 20% выгоднее маркетплейсов</span>
+                                            </div>
+                                            <div class="main-card__desc">
+                                                Лекала под модель авто — точность в каждой строчке
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-card">
+                                        <div class="main-card__img m-backdrop">
+                                            <img src="img/main.webp" alt="">
+                                        </div>
+                                        <div class="main-card__content">
+                                            <div class="main-card__reviews _flex">
+                                                <div class="rating">
+                                                    <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                        <div class="rating-input__item" data-rating-value="5">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="4">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <input class="rating-input__field" type="number" value="0">
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="text14">
+                                                    1 000+ отзывов
+                                                </div>
+                                            </div>
+                                            <div class="h2 h4-mob">
+                                                120 000 модельных авточехлов с доставкой  <span class="_no-wrap">в Москву</span>
+                                                <span class="main-card__subtitle">на 20% выгоднее маркетплейсов</span>
+                                            </div>
+                                            <div class="main-card__desc">
+                                                Лекала под модель авто — точность в каждой строчке
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-card">
+                                        <div class="main-card__img m-backdrop">
+                                            <img src="img/main.webp" alt="">
+                                        </div>
+                                        <div class="main-card__content">
+                                            <div class="main-card__reviews _flex">
+                                                <div class="rating">
+                                                    <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                        <div class="rating-input__item" data-rating-value="5">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="4">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="rating-input__item" data-rating-value="1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                            </svg>
+                                                        </div>
+                                                        <input class="rating-input__field" type="number" value="0">
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="text14">
+                                                    1 000+ отзывов
+                                                </div>
+                                            </div>
+                                            <div class="h2 h4-mob">
+                                                120 000 модельных авточехлов с доставкой  <span class="_no-wrap">в Москву</span>
+                                                <span class="main-card__subtitle">на 20% выгоднее маркетплейсов</span>
+                                            </div>
+                                            <div class="main-card__desc">
+                                                Лекала под модель авто — точность в каждой строчке
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="selection">
+                        <form action="" class="selection-form">
+
+                            <div class="fg">
+                                <select>
+                                    <option selected hidden disabled>Марка</option>
+                                    <option>Audi</option>
+                                    <option>BMW</option>
+                                    <option>Brilliance</option>
+                                    <option>BYD</option>
+                                    <option>Chery</option>
+                                    <option>Chevrolet</option>
+                                    <option>Citroen</option>
+                                    <option>Daewoo</option>
+                                    <option>Chery</option>
+                                    <option>Chevrolet</option>
+                                    <option>Citroen</option>
+                                    <option>Daewoo</option>
+                                </select>
+                            </div>
+                            <div class="fg">
+                                <select>
+                                    <option selected hidden disabled>Модель</option>
+                                    <option>Модель 1</option>
+                                    <option>Модель 2</option>
+                                    <option>Модель 3</option>
+                                </select>
+                            </div>
+                            <div class="fg">
+                                <select>
+                                    <option selected hidden disabled>Поколение</option>
+                                    <option>Поколение 1</option>
+                                    <option>Поколение 2</option>
+                                    <option>Поколение 3</option>
+                                </select>
+                            </div>
+                            <div class="fg _col2">
+                                <select>
+                                    <option selected hidden disabled>Комплектация</option>
+                                    <option>Комплектация 1</option>
+                                    <option>Комплектация 2</option>
+                                    <option>Комплектация 3</option>
+                                </select>
+                            </div>
+
+                            <button class="selection-form__btn m-btn m-btn-green">
+                                <span>Подобрать чехол</span>
+                            </button>
+                        </form>
+                        <div class="selection__img">
+                            <img src="img/brand.webp" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="cars-collection">
+                <div class="container">
+                    <div class="h2">
+                        Популярные модели
+                    </div>
+                    <div class="cars-slider slider">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Haval Dargo
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img2.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Haval M6 II
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img3.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Geely Atlas Pro
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img4.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Haval Jolion I
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img5.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Chery Tiggo 7/PRO
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img6.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Haval F7/F7x
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img7.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Lada Niva Urban 3D
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img8.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Changan CS35 Plus
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="car-card">
+                                            <div class="car-card__img">
+                                                <img src="img/car-img8.webp" alt="">
+                                            </div>
+                                            <div class="car-card__title text14">
+                                                Changan CS35 Plus
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="brands">
+                <div class="container">
+                    <div class="h2">
+                        Популярные марки
+                    </div>
+                    <div class="brands__grid">
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Audi
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img2.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                BMW
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img3.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Chevrolet
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img4.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Datsun
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img5.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Tank
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img6.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Ford
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img7.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Haval
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img8.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Geely
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img9.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Mercedes
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img10.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Lexus
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img11.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Citroen
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img12.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Changan
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img13.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Daewoo
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img14.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Jetta
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img15.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Jac
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img16.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Hyundai
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img17.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Honda
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img18.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                KIA
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img19.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Land Rover
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img20.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Mazda
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img19.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Land Rover
+                            </div>
+                        </a>
+
+                        <a href="" class="car-card">
+                            <div class="car-card__img">
+                                <img src="img/brand-img20.webp" alt="">
+                            </div>
+                            <div class="car-card__title text14">
+                                Mazda
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="brands__bottom">
+                        <button class="_js-show-all-brands brands__more m-btn m-btn-gray-outline">
+                            <svg class="_view1" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M12.5 13C13.0523 13 13.5 12.5523 13.5 12C13.5 11.4477 13.0523 11 12.5 11C11.9477 11 11.5 11.4477 11.5 12C11.5 12.5523 11.9477 13 12.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19.5 13C20.0523 13 20.5 12.5523 20.5 12C20.5 11.4477 20.0523 11 19.5 11C18.9477 11 18.5 11.4477 18.5 12C18.5 12.5523 18.9477 13 19.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.5 13C6.05228 13 6.5 12.5523 6.5 12C6.5 11.4477 6.05228 11 5.5 11C4.94772 11 4.5 11.4477 4.5 12C4.5 12.5523 4.94772 13 5.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="_view1">Показать еще </span>
+                            <span class="_view2">Скрыть</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cheap">
+                <div class="container">
+                    <div class="cheap__inner">
+                        <div class="cheaper">
+                            <div class="cheaper__text">
+                                <div class="cheaper__title text16 semi-bold-text">
+                                    Авточехлы на 10-20% дешевле, чем на маркетплейсах
+                                </div>
+                                <div class="cheaper__desc text14 gray-text">
+                                    Без наценки посредников <br>и комиссии маркетплейсов
+                                </div>
+                            </div>
+                            <div class="socials">
+                                <a href="" class="socials__item">
+                                    <img src="img/wb.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ozon.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ym.svg" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <img src="img/cheap-img.png" alt="" class="cheap__img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="container">
+                    <div class="info__grid grid grid4">
+                        <div class="info-card info-card--black">
+                            <div class="info-card__top">
+                                <div class="h5 h4-mob">
+                                    Специалист подберет идеальный авточехол на ваше авто за 5 минут
+                                </div>
+                                <div class="text16 text14-tablet">
+                                    Уточнит информацию про авто и ваши пожелания. Предложит несколько ценовых вариантов
+                                </div>
+                            </div>
+                            <div class="info-card__bottom">
+                                <a href="" class="info-card__link">
+                                    <span>Подобрать с менеджером</span>
+                                    <img src="img/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-card__img">
+                                <img src="img/info-img3.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-card__top">
+                                <div class="text16 text14-tablet">
+                                    Гайд
+                                </div>
+                                <div class="h5 h4-mob">
+                                    Как самостоятельно подобрать  авточехол
+                                </div>
+                            </div>
+                            <div class="info-card__bottom">
+                                <a href="" class="info-card__link">
+                                    <span>Читать</span>
+                                    <img src="img/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-card__img">
+                                <img src="img/info-img.webp" alt="">
+                            </div>
+                        </div>
+
+                        <div class="info-card info-card--blue">
+                            <div class="info-card__top">
+                                <div class="text16 text14-tablet">
+                                    Онлайн-подбор
+                                </div>
+                                <div class="h5 h4-mob">
+                                    Подберите авточехол, ответив на 4 вопроса
+                                </div>
+                            </div>
+                            <div class="info-card__bottom">
+                                <a href="" class="info-card__link">
+                                    <span>Подобрать <br> онлайн</span>
+                                    <img src="img/arrow-right.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-card__img">
+                                <img src="img/info-img2.webp" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
             <div class="sales-collection">
                 <div class="container">
@@ -1158,6 +2438,192 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reviews">
+                <div class="container">
+                    <div class="h2">
+                        Отзывы покупателей
+                    </div>
+                    <div class="reviews-slider slider">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__col">
+                                                <div class="review-card__top">
+                                                    <div class="review-card__info">
+                                                        <div class="review-card__name h5">
+                                                            Анастасия С.
+                                                        </div>
+                                                        <div class="rating">
+                                                            <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                                <div class="rating-input__item" data-rating-value="5">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="4">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="3">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="1">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <input class="rating-input__field" type="number" value="0">
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="img/ozon.svg" alt="" class="review-card__logo">
+                                                </div>
+                                                <div class="review-card__text">
+                                                    <div class="text16 text14-tablet">
+                                                        Отличные чехлы! когда я заказывала, не было ни одного отзыва. рискнула, заказала. очень хорошо упакованы, качественно прошиты, есть инструкция. фабричные чехлы, красивые. сели хорошо, муж сам натягивал. цвет темнее, чем в карточке товара, но смотрится хорошо. очень довольна заказом! Отличные чехлы! когда я заказывала, не было ни одного отзыва. рискнула, заказала. очень хорошо упакованы, качественно прошиты, есть инструкция.
+                                                    </div>
+                                                </div>
+                                                <div class="review-card__bottom">
+                                                    <div class="review-card__img">
+                                                        <img src="img/car2.webp" alt="">
+                                                    </div>
+                                                    <a href="" class="review-card__link underline-text green-text">
+                                                        <span class="text14 text13-tablet">
+                    Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Красный
+                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__col2">
+                                                <div class="review-card__gallery">
+                                                    <a href="review-gallery.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery2.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery2.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery3.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery3.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery3.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery3.webp" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__col">
+                                                <div class="review-card__top">
+                                                    <div class="review-card__info">
+                                                        <div class="review-card__name h5">
+                                                            Анастасия С.
+                                                        </div>
+                                                        <div class="rating">
+                                                            <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                                <div class="rating-input__item" data-rating-value="5">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="4">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="3">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="rating-input__item" data-rating-value="1">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                                        <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                                    </svg>
+                                                                </div>
+                                                                <input class="rating-input__field" type="number" value="0">
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <img src="img/ozon.svg" alt="" class="review-card__logo">
+                                                </div>
+                                                <div class="review-card__text">
+                                                    <div class="text16 text14-tablet">
+                                                        Отличные чехлы! когда я заказывала, не было ни одного отзыва. рискнула, заказала. очень хорошо упакованы, качественно прошиты, есть инструкция. фабричные чехлы, красивые. сели хорошо, муж сам натягивал. цвет темнее, чем в карточке товара, но смотрится хорошо. очень довольна заказом! Отличные чехлы! когда я заказывала, не было ни одного отзыва. рискнула, заказала. очень хорошо упакованы, качественно прошиты, есть инструкция.
+                                                    </div>
+                                                </div>
+                                                <div class="review-card__bottom">
+                                                    <div class="review-card__img">
+                                                        <img src="img/car2.webp" alt="">
+                                                    </div>
+                                                    <a href="" class="review-card__link underline-text green-text">
+                                                        <span class="text14 text13-tablet">
+                    Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Красный
+                </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__col2">
+                                                <div class="review-card__gallery">
+                                                    <a href="review-gallery.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery2.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery2.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery3.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery3.webp" alt="">
+                                                    </a>
+                                                    <a href="review-gallery3.webp" data-fancybox class="review-card__gallery-img">
+                                                        <img src="img/review-gallery3.webp" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-nav">
+                            <div class="swiper-button swiper-button-prev m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next m-btn-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 6L15 12L9 18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
