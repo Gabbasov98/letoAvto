@@ -37,14 +37,78 @@
                         </button>
                     </div>
                     <div class="header-top__inner">
-                        <div class="header-city">
-                            <div class="header-city__show">
+                        <div class="header-city _show-question">
+                            <div class="js-toggle-city-select header-city__show">
                                 <img src="img/location.svg" alt="">
-                                <span class="text14">Москва</span>
+                                <span class="js-city-output text14">Москва</span>
+                            </div>
+
+                            <div class="city-question">
+                                <div class="city-question__title text14 medium-text">
+                                    Ваш город Москва?
+                                </div>
+                                <div class="city-question__nav">
+                                    <button class="js-confirm-city city-question__btn _green">
+                                        <span class="text16">Да</span>
+                                    </button>
+                                    <button class="js-reject-city city-question__btn">
+                                        <span class="text16">Нет</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="city-popup">
+                                <div class="city-popup__top">
+                                    <button class="js-toggle-city-select city-popup__back green-text">
+                                        <span class="text15">Назад</span>
+                                        <img src="img/back.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <form class="header-search">
+                                    <input type="text" placeholder="Поиск">
+                                    <button class="header-search__btn">
+                                        <img src="img/search-icon.svg" alt="">
+                                    </button>
+                                </form>
+                                <button class="city-popup__btn m-btn m-btn-green">
+                                    <span>Определить по геолокации</span>
+                                    <img src="img/location2.svg" alt="">
+                                </button>
+                                <div class="city-popup__items">
+                                    <div class="city-popup__item">
+                                        <input checked type="radio" name="city" data-value="Москва">
+                                        <label><span class="text16">Москва</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Санкт-Петербург">
+                                        <label><span class="text16">Санкт-Петербург</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Казань">
+                                        <label><span class="text16">Казань</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Краснодар">
+                                        <label><span class="text16">Краснодар</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Новосибирск">
+                                        <label><span class="text16">Новосибирск</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Ростов-на-Дону">
+                                        <label><span class="text16">Ростов-на-Дону</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Сочи">
+                                        <label><span class="text16">Сочи</span></label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <form class="header-search">
+                        <form class="header-search _movable-search">
                             <input type="text" placeholder="Поиск">
                             <button class="header-search__btn">
                                 <img src="img/search-icon.svg" alt="">
@@ -105,7 +169,7 @@
                             <span>Каталог товаров</span>
                         </button>
                         <div class="header-bottom__info text14 gray-text">
-                            Официальный сайт ателье «ЛетоАвто»
+                            Официальный сайт ателье «АвтоЛето»
                         </div>
                     </div>
                     <div class="header-contacts">
@@ -2250,7 +2314,7 @@
             <div class="ceo">
                 <div class="container">
                     <div class="h2">
-                        Интернет-магазин «Летоавто»
+                        Интернет-магазин «АвтоЛето»
                     </div>
                     <div class="text">
                         <p>Интернет-магазин предлагает модельные авточехлы для Audi 100 с номером кузова C3, С4 по доступным ценам. Изделия выполнены из качественных современных материалов: жаккарда, велюра, алькантары, экокожи. Все представленные на сайте готовые комплекты имеются в наличии. Аксессуары надежно защитят сидения автомобиля от повреждений и загрязнений.</p>
