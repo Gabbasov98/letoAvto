@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <title>Корзина </title>
+</head>
+
+
+<body class="m-page order-page">
+    <div class="wrapper">
+        <header class="header2">
+            <div class="container">
+                <div class="header2__inner">
+                    <div class="header2__col _flex">
+                        <a href="" class="header2__back">
+                            <img src="img/back2.svg" alt="">
+                            <span class="text14 text12-tablet">Вернуться к покупкам</span>
+                        </a>
+                        <div class="header-city _show-question">
+                            <div class="js-toggle-city-select header-city__show">
+                                <img src="img/location.svg" alt="">
+                                <span class="js-city-output text14">Москва</span>
+                            </div>
+
+                            <div class="city-question">
+                                <div class="city-question__title text14 medium-text">
+                                    Ваш город Москва?
+                                </div>
+                                <div class="city-question__nav">
+                                    <button class="js-confirm-city city-question__btn _green">
+                                        <span class="text16">Да</span>
+                                    </button>
+                                    <button class="js-reject-city city-question__btn">
+                                        <span class="text16">Нет</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="city-popup">
+                                <div class="city-popup__top">
+                                    <button class="js-toggle-city-select city-popup__back green-text">
+                                        <span class="text15">Назад</span>
+                                        <img src="img/back.svg" alt="">
+                                    </button>
+                                </div>
+
+                                <form class="header-search">
+                                    <input type="text" placeholder="Поиск">
+                                    <button class="header-search__btn">
+                                        <img src="img/search-icon.svg" alt="">
+                                    </button>
+                                </form>
+                                <button class="city-popup__btn m-btn m-btn-green">
+                                    <span>Определить по геолокации</span>
+                                    <img src="img/location2.svg" alt="">
+                                </button>
+                                <div class="city-popup__items">
+                                    <div class="city-popup__item">
+                                        <input checked type="radio" name="city" data-value="Москва">
+                                        <label><span class="text16">Москва</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Санкт-Петербург">
+                                        <label><span class="text16">Санкт-Петербург</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Казань">
+                                        <label><span class="text16">Казань</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Краснодар">
+                                        <label><span class="text16">Краснодар</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Новосибирск">
+                                        <label><span class="text16">Новосибирск</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Ростов-на-Дону">
+                                        <label><span class="text16">Ростов-на-Дону</span></label>
+                                    </div>
+                                    <div class="city-popup__item">
+                                        <input type="radio" name="city" data-value="Сочи">
+                                        <label><span class="text16">Сочи</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="" class="header2__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+
+                    <div class="header-contacts header-contacts--desktop">
+                        <div class="header-contacts__text">
+                            <a href="tel:89383597587" class="header-contacts__phone h5">
+                                <span>8 (938) 359-75-87</span>
+                            </a>
+                            <div class="header-contacts__time text14 text12-tablet gray-text">
+                                пн-вс с 9 до 20 часов
+                            </div>
+                        </div>
+                        <div class="header-contacts__links">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/max.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+
+            <div class="cart">
+                <div class="container">
+                    <div class="cart__top _flex">
+                        <h1 class="h2">
+                            Корзина
+                        </h1>
+                        <div class="text14 gray-text">
+                            2 товара
+                        </div>
+                    </div>
+                    <div class="cart__grid">
+                        <div class="cart__col">
+                            <div class="cart__items">
+                                <div class="cart-item">
+                                    <div class="cart-item__top">
+                                        <div class="cart-item__col">
+                                            <div class="cart-item__img">
+                                                <img src="img/gallery.webp" alt="">
+                                            </div>
+                                            <div class="cart-item__content">
+                                                <a href="" class="cart-item__title text16 bold-text">
+                                                    Чехол для Kia Rio IV Comfort
+                                                </a>
+                                                <div class="cart-item__info">
+                                                    <div class="cart-item__brand body-s">
+                                                        BMW 3 1990-2000 кузов Е36
+                                                    </div>
+                                                    <div class="cart-item__desc body-s gray-text">
+                                                        Задняя спинка 40 на 60, сиденье единое, 2-надкрыльника, задний подлокотник (молния), 5+2-подголовников, (Передние погдоловники Активные + Неактивные)
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__props">
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Цвет:</div>
+                                                        <div class="cart-item__prop-desc body-s">Черный</div>
+                                                    </div>
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Материал:</div>
+                                                        <div class="cart-item__prop-desc body-s">Лён</div>
+                                                    </div>
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Серия чехла:</div>
+                                                        <div class="cart-item__prop-desc body-s">Базовый 0.8 мм</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cart-item__col2">
+                                            <div class='cartcalc'>
+                                                <button class='ccalc-minus'>
+                                                    <img src="img/minus2.svg" alt="">
+                                                </button>
+                                                <input type='text' value='1'>
+                                                <button class='ccalc-plus'>
+                                                    <img src="img/plus2.svg" alt="">
+                                                </button>
+                                            </div>
+
+                                            <div class="cart-item__action">
+                                                <button class="cart-item__delete">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="#707D89" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span class="body-s">Удалить</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cart-item__col3">
+
+
+                                            <div class="cart-item__cost">
+                                                <div class="cart-item__sale">
+                                                    <span class="text12">
+                        -49%
+                    </span>
+                                                </div>
+                                                <div class="cart-item__price h5">
+                                                    7 690 ₽
+                                                </div>
+                                                <div class="cart-item__price2 body-s gray-text">8 690</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cart-item__bottom">
+                                        <div class="body-s gray-text">
+                                            Стоимость на маркетплейсах:
+                                        </div>
+                                        <div class="cart-item__shops">
+                                            <div class="cart-item__shop">
+                                                <img src="img/wb.svg" alt="">
+                                                <span class="body-s gray-text">14 700₽</span>
+                                            </div>
+                                            <div class="cart-item__shop">
+                                                <img src="img/ozon.svg" alt="">
+                                                <span class="body-s gray-text">15 980₽</span>
+                                            </div>
+                                            <div class="cart-item__shop">
+                                                <img src="img/ym.svg" alt="">
+                                                <span class="body-s gray-text">13 420₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="cart-item">
+                                    <div class="cart-item__top">
+                                        <div class="cart-item__col">
+                                            <div class="cart-item__img">
+                                                <img src="img/gallery.webp" alt="">
+                                            </div>
+                                            <div class="cart-item__content">
+                                                <a href="" class="cart-item__title text16 bold-text">
+                                                    Чехол для Kia Rio IV Comfort
+                                                </a>
+                                                <div class="cart-item__info">
+                                                    <div class="cart-item__brand body-s">
+                                                        BMW 3 1990-2000 кузов Е36
+                                                    </div>
+                                                    <div class="cart-item__desc body-s gray-text">
+                                                        Задняя спинка 40 на 60, сиденье единое, 2-надкрыльника, задний подлокотник (молния), 5+2-подголовников, (Передние погдоловники Активные + Неактивные)
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__props">
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Цвет:</div>
+                                                        <div class="cart-item__prop-desc body-s">Черный</div>
+                                                    </div>
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Материал:</div>
+                                                        <div class="cart-item__prop-desc body-s">Лён</div>
+                                                    </div>
+                                                    <div class="cart-item__prop">
+                                                        <div class="cart-item__prop-title gray-text body-s">Серия чехла:</div>
+                                                        <div class="cart-item__prop-desc body-s">Базовый 0.8 мм</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cart-item__col2">
+                                            <div class='cartcalc'>
+                                                <button class='ccalc-minus'>
+                                                    <img src="img/minus2.svg" alt="">
+                                                </button>
+                                                <input type='text' value='1'>
+                                                <button class='ccalc-plus'>
+                                                    <img src="img/plus2.svg" alt="">
+                                                </button>
+                                            </div>
+
+                                            <div class="cart-item__action">
+                                                <button class="cart-item__delete">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M7.5 2.5H12.5M2.5 5H17.5M15.8333 5L15.2489 13.7661C15.1612 15.0813 15.1174 15.7389 14.8333 16.2375C14.5833 16.6765 14.206 17.0294 13.7514 17.2497C13.235 17.5 12.5759 17.5 11.2578 17.5H8.74221C7.42409 17.5 6.76503 17.5 6.24861 17.2497C5.79396 17.0294 5.41674 16.6765 5.16665 16.2375C4.88259 15.7389 4.83875 15.0813 4.75107 13.7661L4.16667 5M8.33333 8.75V12.9167M11.6667 8.75V12.9167" stroke="#707D89" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <span class="body-s">Удалить</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cart-item__col3">
+
+                                            <div class="cart-item__cost">
+                                                <div class="cart-item__price h5">
+                                                    7 690 ₽
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cart-item__bottom">
+                                        <div class="body-s gray-text">
+                                            Стоимость на маркетплейсах:
+                                        </div>
+                                        <div class="cart-item__shops">
+                                            <div class="cart-item__shop">
+                                                <img src="img/wb.svg" alt="">
+                                                <span class="body-s gray-text">14 700₽</span>
+                                            </div>
+                                            <div class="cart-item__shop">
+                                                <img src="img/ozon.svg" alt="">
+                                                <span class="body-s gray-text">15 980₽</span>
+                                            </div>
+                                            <div class="cart-item__shop">
+                                                <img src="img/ym.svg" alt="">
+                                                <span class="body-s gray-text">13 420₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__col2">
+                            <div class="cart-sidebar">
+                                <div class="cart-info">
+
+                                    <div class="cart-info__items">
+                                        <div class="cart-info__item">
+                                            <div class="body-s gray-text">2 товара</div>
+                                            <div class="body-s">52 200 ₽</div>
+                                        </div>
+                                        <div class="cart-info__item">
+                                            <div class="body-s gray-text">Ваша скидка</div>
+                                            <div class="body-s">12 789 ₽</div>
+                                        </div>
+                                        <div class="cart-info__item">
+                                            <div class="body-s gray-text">Доставка</div>
+                                            <div class="body-s">0 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-info__sum">
+                                        <div class="cart-info__item">
+                                            <div class="h4">Итого:</div>
+                                            <div class="h4">39 411 ₽</div>
+                                        </div>
+                                    </div>
+
+                                    <button class="cart-info__btn m-btn m-btn-green">
+                                        <span>Оформить заказ</span>
+                                    </button>
+
+                                </div>
+                                <div class="free-delivery2">
+                                    <img src="img/free-delivery.svg" alt="" class="free-delivery2__icon">
+                                    <div class="free-delivery2__text">
+                                        <div class="h5">
+                                            Бесплатная доставка
+                                            Boxberry
+                                        </div>
+                                        <div class="text16 text14-tablet">
+                                            Доставим чехлы в любую точки России
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__bottom gray-text">
+                    <div class="footer__c text14 text12-tablet">
+                        © АвтоЛето, 2025 г.
+                    </div>
+                    <a href="" class="footer__conf text14 text12-tablet">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

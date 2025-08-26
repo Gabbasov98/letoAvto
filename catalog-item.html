@@ -20,6 +20,94 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
+                <div class="header-top-mob">
+                    <div class="header-city _show-question">
+                        <div class="js-toggle-city-select header-city__show">
+                            <img src="img/location.svg" alt="">
+                            <span class="js-city-output text14">Москва</span>
+                        </div>
+
+                        <div class="city-question">
+                            <div class="city-question__title text14 medium-text">
+                                Ваш город Москва?
+                            </div>
+                            <div class="city-question__nav">
+                                <button class="js-confirm-city city-question__btn _green">
+                                    <span class="text16">Да</span>
+                                </button>
+                                <button class="js-reject-city city-question__btn">
+                                    <span class="text16">Нет</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="city-popup">
+                            <div class="city-popup__top">
+                                <button class="js-toggle-city-select city-popup__back green-text">
+                                    <span class="text15">Назад</span>
+                                    <img src="img/back.svg" alt="">
+                                </button>
+                            </div>
+
+                            <form class="header-search">
+                                <input type="text" placeholder="Поиск">
+                                <button class="header-search__btn">
+                                    <img src="img/search-icon.svg" alt="">
+                                </button>
+                            </form>
+                            <button class="city-popup__btn m-btn m-btn-green">
+                                <span>Определить по геолокации</span>
+                                <img src="img/location2.svg" alt="">
+                            </button>
+                            <div class="city-popup__items">
+                                <div class="city-popup__item">
+                                    <input checked type="radio" name="city" data-value="Москва">
+                                    <label><span class="text16">Москва</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Санкт-Петербург">
+                                    <label><span class="text16">Санкт-Петербург</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Казань">
+                                    <label><span class="text16">Казань</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Краснодар">
+                                    <label><span class="text16">Краснодар</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Новосибирск">
+                                    <label><span class="text16">Новосибирск</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Ростов-на-Дону">
+                                    <label><span class="text16">Ростов-на-Дону</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Сочи">
+                                    <label><span class="text16">Сочи</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="header-search">
+                        <input type="text" placeholder="Поиск">
+                        <button class="header-search__btn">
+                            <img src="img/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                    <nav class="nav2">
+                        <a href="" class="nav2__link">
+                            <span class="text12">Онлайн-подбор</span>
+                        </a>
+                        <a href="" class="nav2__link">
+                            <img src="img/percent.svg" alt="">
+                            <span class="text12">Скидки и акции</span>
+                        </a>
+                    </nav>
+                </div>
+
                 <div class="header-top">
                     <div class="header-top__nav">
                         <a href="" class="header-top__logo header__logo">
@@ -190,23 +278,19 @@
                     <div class="header-bottom__col _flex">
                         <button class="_toggle-catalog catalog-btn m-btn m-btn-green">
                             <img src="img/burger.svg" alt="">
-                            <span>Каталог товаров</span>
+                            <span class="_view1">Каталог товаров</span>
+                            <span class="_view2">Каталог</span>
                         </button>
                         <div class="header-bottom__info text14 gray-text">
                             Официальный сайт ателье «АвтоЛето»
                         </div>
                     </div>
-                    <div class="header-contacts header-contacts--desktop">
-                        <div class="header-contacts__time text14 gray-text">
-                            пн-вс с 9 до 20 часов
+                    <div class="header-marketplace">
+                        <div class="header-marketplace__title">
+                            -25% от цены <br>
+        маркетплейса
                         </div>
-                        <a href="tel:89383597587" class="header-contacts__phone h5">
-                            8 (938) 359-75-87
-                        </a>
                         <div class="socials">
-                            <a href="" class="socials__item">
-                                <img src="img/whatsapp.svg" alt="">
-                            </a>
                             <a href="" class="socials__item">
                                 <img src="img/wb.svg" alt="">
                             </a>
@@ -217,14 +301,45 @@
                                 <img src="img/ym.svg" alt="">
                             </a>
                         </div>
-
+                    </div>
+                    <div class="header-contacts header-contacts--desktop">
+                        <div class="header-contacts__text">
+                            <a href="tel:89383597587" class="header-contacts__phone h5">
+                                8 (938) 359-75-87
+                            </a>
+                            <div class="header-contacts__time text14 gray-text">
+                                пн-вс с 9 до 20 часов
+                            </div>
+                        </div>
+                        <div class="header-contacts__links">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/max.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="" class="header-contacts__cart">
+                            <img src="img/cart2.svg" alt="">
+                        </a>
                     </div>
                     <div class="header-mob">
-                        <div class="h5">
-                            8 (938) 359-75-87
+                        <!--            <div class="h5">-->
+                        <!--                8 (938) 359-75-87-->
+                        <!--            </div>-->
+                        <div class="header-mob__contacts">
+                            <a href="" class="h4">
+                                8 (999) 999-99-99
+                            </a>
+                            <div class="text12 gray-text">
+                                пн-вс с 9 до 20 часов
+                            </div>
                         </div>
                         <a href="" class="socials__item">
                             <img src="img/whatsapp2.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/max.svg" alt="">
                         </a>
                         <button class="burger _toggle-menu">
                             <img src="img/burger2.svg" alt="">
@@ -686,7 +801,8 @@
                                 <div class="about-boxberry">
                                     <div class="about-boxberry__top">
                                         <div class="about-boxberry__title">
-                                            Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                            Удобное получение <br>
+            в пункте выдачи Боксбери
                                         </div>
                                         <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
                                     </div>
@@ -727,6 +843,11 @@
                             <li><a href="">Каталог чехлов</a></li>
                             <li><span>Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Autolider MB17-0503-KK8 </span></li>
                         </ul>
+                    </div>
+                    <div class="product-top__title-wrap _mob">
+                        <div class="product-top__title h2 h4-mob">
+                            Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Autolider MB17-0503-KK8
+                        </div>
                     </div>
                     <div class="catalog-item__grid">
                         <div class="catalog-item__col">
@@ -809,8 +930,109 @@
 
                                 </div>
                                 <div class="product-top__col2">
-                                    <div class="product-top__title h2 h4-mob">
-                                        Чехлы Chevrolet Captiva 2006-2013 серый алькантара
+                                    <div class="product-top__title-wrap _pc">
+                                        <div class="product-top__title h2 h4-mob">
+                                            Чехлы Mercedes S-classe поколение 3 W 140 1991-1999 Autolider MB17-0503-KK8
+                                        </div>
+                                    </div>
+
+                                    <div class="product-series">
+                                        <div class="product-color__title text14">
+                                            <span class="gray-text">Серия:</span>
+                                            <span class="_js-series-output"> Базовый 0.8 мм</span>
+                                        </div>
+                                        <div class="product-series__items">
+                                            <div class="series-item">
+                                                <input checked type="radio" data-value="Базовый 0.8 мм" name="series">
+                                                <label>
+                                                    <span>
+                                                        Базовый <br>
+                                                        0.8 мм
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="series-item">
+                                                <input type="radio" data-value="Стандарт 1 мм" name="series">
+                                                <label>
+                                                    <span>
+                                                        Стандарт <br>
+                                                        1 мм
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="series-item">
+                                                <input type="radio" data-value="Премиум 1.2 мм" name="series">
+                                                <label>
+                                                    <span>
+                                                        Премиум <br>
+                                                        1.2 мм
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="product-series__desc">
+                                            <div class="text14 gray-text">
+                                                Толщина Экокожи 0.8 мм, 20 000 циклов истирания, срок эксплуатации 2 года, при пробеге 15 000 тыс км год
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-material">
+                                        <div class="product-color__title text14">
+                                            <span class="gray-text">Материал:</span>
+                                            <span class="_js-material-output">Алькантара</span>
+                                        </div>
+                                        <div class="product-color__items">
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара" type="radio" name="material" checked>
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 2" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 3" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 4" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="color-radio">
+                                                <input data-value="Алькантара 5" type="radio" name="material">
+                                                <div class="color-radio__img">
+
+
+                                                    <img src="img/material-img9.webp" alt="">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                     <div class="product-color">
                                         <div class="product-color__title text14">
@@ -883,89 +1105,34 @@
                                             Все 12 цветов
                                         </button>
                                     </div>
-                                    <div class="product-material">
-                                        <div class="product-color__title text14">
-                                            <span class="gray-text">Материал:</span>
-                                            <span class="_js-material-output">Алькантара</span>
+
+                                    <div class="catalog-detailed">
+                                        <div class="catalog-detailed__img2">
+                                            <img src="img/catalog-header2.webp" alt="">
                                         </div>
-                                        <div class="product-color__items">
-                                            <div class="color-radio">
-                                                <input data-value="Алькантара" type="radio" name="material" checked>
-                                                <div class="color-radio__img">
-
-
-                                                    <img src="img/material-img9.webp" alt="">
-
+                                        <div class="catalog-detailed__col">
+                                            <div class="catalog-detailed__prop">
+                                                <div class="catalog-detailed__prop-title">
+                                                    Land Rover
+                                                </div>
+                                                <div class="catalog-detailed__prop-desc">
+                                                    FreeLander 2
                                                 </div>
                                             </div>
-
-                                            <div class="color-radio">
-                                                <input data-value="Алькантара 2" type="radio" name="material">
-                                                <div class="color-radio__img">
-
-
-                                                    <img src="img/material-img9.webp" alt="">
-
+                                        </div>
+                                        <div class="catalog-detailed__col2">
+                                            <div class="catalog-detailed__prop">
+                                                <div class="catalog-detailed__prop-title">
+                                                    Комплектация
+                                                </div>
+                                                <div class="catalog-detailed__prop-desc">
+                                                    Сиденье и спинка второго ряда - одна секция
                                                 </div>
                                             </div>
-
-                                            <div class="color-radio">
-                                                <input data-value="Алькантара 3" type="radio" name="material">
-                                                <div class="color-radio__img">
-
-
-                                                    <img src="img/material-img9.webp" alt="">
-
-                                                </div>
-                                            </div>
-
-                                            <div class="color-radio">
-                                                <input data-value="Алькантара 4" type="radio" name="material">
-                                                <div class="color-radio__img">
-
-
-                                                    <img src="img/material-img9.webp" alt="">
-
-                                                </div>
-                                            </div>
-
-                                            <div class="color-radio">
-                                                <input data-value="Алькантара 5" type="radio" name="material">
-                                                <div class="color-radio__img">
-
-
-                                                    <img src="img/material-img9.webp" alt="">
-
-                                                </div>
-                                            </div>
-
                                         </div>
-                                    </div>
-
-                                    <div class="product-use">
-                                        <img src="img/car.png" alt="" class="product-use__img">
-                                        <div class="product-use__title text15 semi-bold-text">
-                                            Применимость
-                                        </div>
-                                        <div class="product-use__desc text13">
-                                            Chevrolet Captiva
-                                        </div>
-                                        <div class="product-use__prop">
-                                            <div class="product-use__prop-title">
-                                                Комплектация:
-                                            </div>
-                                            <div class="product-use__prop-desc">
-                                                LT 5 мест
-                                            </div>
-                                        </div>
-                                        <div class="product-use__prop">
-                                            <div class="product-use__prop-title">
-                                                Годы выпуска:
-                                            </div>
-                                            <div class="product-use__prop-desc">
-                                                2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013
-                                            </div>
-                                        </div>
+                                        <button class="catalog-detailed__btn m-btn m-btn-green">
+                                            <span>Изменить</span>
+                                        </button>
                                     </div>
 
                                     <div class="product-sidebar">
@@ -1008,31 +1175,34 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="about-marketplaces">
-                                                <div class="about-marketplaces__top">
-                                                    <div class="about-marketplaces__title">
-                                                        На 10-20% дешевле, <br>чем на маркетплейсах
+                                            <div class="cheaper">
+                                                <div class="cheaper__text">
+                                                    <div class="cheaper__title text16 bold-text">
+                                                        Авточехлы <span class="green-text">на 10-20% дешевле</span>, чем на маркетплейсах
                                                     </div>
-                                                    <div class="about-marketplaces__desc text14 gray-text">
-                                                        Посмотрите этот товар на маркетплейсах и убедитесь сами
-                                                    </div>
-                                                </div>
-                                                <div class="about-marketplaces__items">
-                                                    <div class="about-marketplaces__item about-marketplaces__item--wb">
-                                                        <span>WB</span>
-                                                    </div>
-                                                    <div class="about-marketplaces__item about-marketplaces__item--ozon">
-                                                        <span>Ozon</span>
-                                                    </div>
-                                                    <div class="about-marketplaces__item about-marketplaces__item--ym">
-                                                        <span>ЯМаркет</span>
+                                                    <div class="cheaper__desc text14">
+                                                        Без наценки посредников и агентсткой комисси маркетплейсов
                                                     </div>
                                                 </div>
+                                                <div class="socials">
+                                                    <a href="" class="socials__item">
+                                                        <img src="img/wb.svg" alt="">
+                                                    </a>
+                                                    <a href="" class="socials__item">
+                                                        <img src="img/ozon.svg" alt="">
+                                                    </a>
+                                                    <a href="" class="socials__item">
+                                                        <img src="img/ym.svg" alt="">
+                                                    </a>
+                                                </div>
+
                                             </div>
+
                                             <div class="about-boxberry">
                                                 <div class="about-boxberry__top">
                                                     <div class="about-boxberry__title">
-                                                        Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                                        Удобное получение <br>
+            в пункте выдачи Боксбери
                                                     </div>
                                                     <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
                                                 </div>
@@ -1518,12 +1688,12 @@
                                                         Изготавливаем чехлы строго по лекалам вашей модели авто, поэтому они идеально повторяют форму сидений
                                                     </div>
                                                 </div>
-                                                <ul class="m-list">
+                                                <ul class="m-list _big">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Без зазоров, перекосов, складов и растяжек</div>
+                                                        <div class="text16 text14-tablet">Без зазоров, перекосов, складов и растяжек</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Не сползают при езде</div>
+                                                        <div class="text16 text14-tablet">Не сползают при езде</div>
                                                     </li>
                                                 </ul>
                                                 <div class="domestic-production__desc2 semi-bold-text">
@@ -1545,13 +1715,13 @@
                                                 </div>
                                                 <ul class="m-list">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Дышащие материалы <br> не дают потеть летом</div>
+                                                        <div class="text16 text14-tablet">Дышащие материалы не дают потеть летом</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Мягкие ткани сохраняют тепло зимой</div>
+                                                        <div class="text16 text14-tablet">Мягкие ткани сохраняют тепло зимой</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Продуманы все отверстия для регулировку сидений и ручек откидывания</div>
+                                                        <div class="text16 text14-tablet">Продуманы все отверстия для регулировку сидений и ручек откидывания</div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1572,13 +1742,13 @@
                                                 </div>
                                                 <ul class="m-list">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Материалы — сертифицированы и протестированы</div>
+                                                        <div class="text16 text14-tablet">Материалы — сертифицированы и протестированы</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Раскрой — на профессиональном ЧПУ-оборудовании</div>
+                                                        <div class="text16 text14-tablet">Раскрой — на профессиональном ЧПУ-оборудовании</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Швы — усиленные, с двойной строчкой</div>
+                                                        <div class="text16 text14-tablet">Швы — усиленные, с двойной строчкой</div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1622,6 +1792,34 @@
                                     </div>
 
                                     <div class="advantages__bottom">
+                                        <div class="advantage-card _full domestic-production__inner">
+                                            <div class="domestic-production__img">
+                                                <img class="_view1" src="img/advantage-img.webp" alt="">
+                                                <img class="_view2" src="img/advantage-img-mob.webp" alt="">
+                                            </div>
+                                            <div class="domestic-production__content">
+                                                <div class="h3 h4-mob">
+                                                    Прост в уходе <br>
+                    Протёр — и снова как новый
+                                                </div>
+                                                <ul class="m-list">
+                                                    <li>
+                                                        <div class="text16 text14-tablet">Чехлы устойчивы к загрязнениям и пятнам</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="text16 text14-tablet">Не выцветают и не пахнут химией</div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="text16 text14-tablet">Легко чистятся: просто протрите влажной тряпкой</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="domestic-production__desc semi-bold-text">
+                                                    <div class="text16 text14-tablet">
+                                                        Ваш салон всегда будет выглядеть ухоженно <br>  — даже после длительной поездки или детского «творчества»
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="advantage-card advantage-card--blue domestic-production__inner">
                                             <div class="domestic-production__content">
                                                 <div class="h3 h4-mob">
@@ -1634,10 +1832,10 @@
                                                 </div>
                                                 <ul class="m-list">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Никаких инструментов не нужно</div>
+                                                        <div class="text16 text14-tablet">Никаких инструментов не нужно</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Пошаговая видеоинструкция  для каждой модели</div>
+                                                        <div class="text16 text14-tablet">Пошаговая видеоинструкция  для каждой модели</div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1659,75 +1857,377 @@
                                                 </div>
                                                 <ul class="m-list">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Передние и задние чехлы</div>
+                                                        <div class="text16 text14-tablet">Передние и задние чехлы</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Все необходимые элементы крепежа</div>
+                                                        <div class="text16 text14-tablet">Все необходимые элементы крепежа</div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Заглушки для креплений</div>
+                                                        <div class="text16 text14-tablet">Заглушки для креплений</div>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="advantage-card _full domestic-production__inner">
                                             <div class="domestic-production__img">
-                                                <img class="_view1" src="img/advantage-img.webp" alt="">
-                                                <img class="_view2" src="img/advantage-img-mob.webp" alt="">
+                                                <img class="_view1" src="img/advantage-img6.webp" alt="">
+                                                <img class="_view2" src="img/advantage-img6-mob.webp" alt="">
                                             </div>
                                             <div class="domestic-production__content">
                                                 <div class="h3 h4-mob">
-                                                    Прост в уходе <br>
-                    Протёр — и снова как новый
+                                                    Современное российское <br> производство — гарантия вашей безопасности и комфорта
                                                 </div>
-                                                <ul class="m-list">
+                                                <ul class="m-list _big">
                                                     <li>
-                                                        <div class="text16 text12-tablet">Чехлы устойчивы к загрязнениям и пятнам</div>
+                                                        <div class="text16 text14-tablet">Автоматизированный раскройный комплекс </div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Не выцветают и не пахнут химией</div>
+                                                        <div class="text16 text14-tablet">Современное швейное оборудование </div>
                                                     </li>
                                                     <li>
-                                                        <div class="text16 text12-tablet">Легко чистятся: просто протрите влажной тряпкой</div>
-                                                    </li>
-                                                </ul>
-                                                <div class="domestic-production__desc semi-bold-text">
-                                                    <div class="text16 text14-tablet">
-                                                        Ваш салон всегда будет выглядеть ухоженно <br>  — даже после длительной поездки или детского «творчества»
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="advantage-card _full domestic-production__inner">
-                                            <div class="domestic-production__img">
-                                                <img class="_view1" src="img/domestic-production.webp" alt="">
-                                                <img class="_view2" src="img/domestic-production2.webp" alt="">
-                                            </div>
-                                            <div class="domestic-production__content">
-                                                <div class="h3 h4-mob">
-                                                    Современное российское производство  <br> — гарантия вашей безопасности и комфорта
-                                                </div>
-                                                <ul class="m-list">
-                                                    <li>
-                                                        <div class="text16 text12-tablet">Автоматизированный раскройный комплекс </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="text16 text12-tablet">Современное швейное оборудование </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="text16 text12-tablet">Профессиональные программы для обработки лекал </div>
+                                                        <div class="text16 text14-tablet">Профессиональные программы для обработки лекал </div>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
-
 
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-collection">
+                <div class="container">
+                    <div class="h2">
+                        Последние отзывы
+                    </div>
+                    <div class="reviews-slider2 slider">
+                        <div class="slider__wrap">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review-card3">
+                                            <div class="review-card3__top _flex-between">
+                                                <div class="review-card3__date text14 gray-text">
+                                                    21 апреля 2025
+                                                </div>
+                                                <img src="img/ym2.svg" alt="" class="review-card3__logo">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card3__text">
+                                                Достоинства <br>
+        Красивые. <br>
+
+                                                <br>
+
+        Недостатки <br>
+        Спинка не прилегает. <br>
+
+                                                <br>
+
+        Комментарий <br>
+        Брала за 8 тысяч. На рав4 3 поколения. В наших магазинах найти не могла,а под заказ выходило больше десятки. Одно огорчило, что середина не чёрного цвета, а синего. Хотя заявлено, что цвет чёрный. Обидно, но ладно. Смотрится и с этим красиво.
+                                            </div>
+                                            <div class="review-card3__nav">
+                                                <a href="" class="review-card3__link">
+                                                    Читать на Я.Маркет
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card3">
+                                            <div class="review-card3__top _flex-between">
+                                                <div class="review-card3__date text14 gray-text">
+                                                    21 апреля 2025
+                                                </div>
+                                                <img src="img/ym2.svg" alt="" class="review-card3__logo">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card3__text">
+                                                Достоинства <br>
+        Красивые. <br>
+
+                                                <br>
+
+        Недостатки <br>
+        Спинка не прилегает. <br>
+
+                                                <br>
+
+        Комментарий <br>
+        Брала за 8 тысяч. На рав4 3 поколения. В наших магазинах найти не могла,а под заказ выходило больше десятки. Одно огорчило, что середина не чёрного цвета, а синего. Хотя заявлено, что цвет чёрный. Обидно, но ладно. Смотрится и с этим красиво.
+                                            </div>
+                                            <div class="review-card3__nav">
+                                                <a href="" class="review-card3__link">
+                                                    Читать на Я.Маркет
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card3">
+                                            <div class="review-card3__top _flex-between">
+                                                <div class="review-card3__date text14 gray-text">
+                                                    21 апреля 2025
+                                                </div>
+                                                <img src="img/ym2.svg" alt="" class="review-card3__logo">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card3__text">
+                                                Достоинства <br>
+        Красивые. <br>
+
+                                                <br>
+
+        Недостатки <br>
+        Спинка не прилегает. <br>
+
+                                                <br>
+
+        Комментарий <br>
+        Брала за 8 тысяч. На рав4 3 поколения. В наших магазинах найти не могла,а под заказ выходило больше десятки. Одно огорчило, что середина не чёрного цвета, а синего. Хотя заявлено, что цвет чёрный. Обидно, но ладно. Смотрится и с этим красиво.
+                                            </div>
+                                            <div class="review-card3__nav">
+                                                <a href="" class="review-card3__link">
+                                                    Читать на Я.Маркет
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card3">
+                                            <div class="review-card3__top _flex-between">
+                                                <div class="review-card3__date text14 gray-text">
+                                                    21 апреля 2025
+                                                </div>
+                                                <img src="img/ym2.svg" alt="" class="review-card3__logo">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card3__text">
+                                                Достоинства <br>
+        Красивые. <br>
+
+                                                <br>
+
+        Недостатки <br>
+        Спинка не прилегает. <br>
+
+                                                <br>
+
+        Комментарий <br>
+        Брала за 8 тысяч. На рав4 3 поколения. В наших магазинах найти не могла,а под заказ выходило больше десятки. Одно огорчило, что середина не чёрного цвета, а синего. Хотя заявлено, что цвет чёрный. Обидно, но ладно. Смотрится и с этим красиво.
+                                            </div>
+                                            <div class="review-card3__nav">
+                                                <a href="" class="review-card3__link">
+                                                    Читать на Я.Маркет
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-card3">
+                                            <div class="review-card3__top _flex-between">
+                                                <div class="review-card3__date text14 gray-text">
+                                                    21 апреля 2025
+                                                </div>
+                                                <img src="img/ym2.svg" alt="" class="review-card3__logo">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="rating-input rating-input--read-only" data-total-rating="5" data-rating-code="1">
+                                                    <div class="rating-input__item" data-rating-value="5">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="3">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="rating-input__item" data-rating-value="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                                                            <path d="M8.14258 1.00912C8.19159 0.858283 8.38477 0.839334 8.46973 0.952484L8.49902 1.00912L9.71973 4.76498C9.8841 5.27086 10.336 5.62421 10.8594 5.66635L10.9648 5.67026H14.915C15.0737 5.67043 15.1511 5.8485 15.0693 5.9642L15.0244 6.00912L11.8291 8.33041C11.3989 8.64303 11.2037 9.18205 11.3252 9.69272L11.3535 9.79526L12.5742 13.5511C12.6232 13.702 12.478 13.8311 12.3428 13.7894L12.2861 13.7601L9.09082 11.4388C8.66039 11.1261 8.08691 11.1065 7.63867 11.3802L7.55078 11.4388L4.35547 13.7601C4.22702 13.8534 4.05949 13.7553 4.05762 13.6136L4.06738 13.5511L5.28809 9.79526C5.45247 9.28934 5.29422 8.73757 4.89551 8.39584L4.8125 8.33041L1.61719 6.00912C1.48899 5.91598 1.53048 5.72705 1.66406 5.681L1.72754 5.67026H5.67676C6.20866 5.67026 6.68392 5.34932 6.88574 4.86459L6.92285 4.76498L8.14258 1.00912Z" fill="#F8B808" stroke="#F8B808" stroke-width="1.12261" />
+                                                        </svg>
+                                                    </div>
+                                                    <input class="rating-input__field" type="number" value="0">
+
+
+                                                </div>
+                                            </div>
+                                            <div class="review-card3__text">
+                                                Достоинства <br>
+        Красивые. <br>
+
+                                                <br>
+
+        Недостатки <br>
+        Спинка не прилегает. <br>
+
+                                                <br>
+
+        Комментарий <br>
+        Брала за 8 тысяч. На рав4 3 поколения. В наших магазинах найти не могла,а под заказ выходило больше десятки. Одно огорчило, что середина не чёрного цвета, а синего. Хотя заявлено, что цвет чёрный. Обидно, но ладно. Смотрится и с этим красиво.
+                                            </div>
+                                            <div class="review-card3__nav">
+                                                <a href="" class="review-card3__link">
+                                                    Читать на Я.Маркет
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-collection__nav">
+                        <button class="_toggle-reviews reviews-collection__btn m-btn m-btn-green-outline">
+                            <svg class="_view1" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 9.75C9.91421 9.75 10.25 9.41421 10.25 9C10.25 8.58579 9.91421 8.25 9.5 8.25C9.08579 8.25 8.75 8.58579 8.75 9C8.75 9.41421 9.08579 9.75 9.5 9.75Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.75 9.75C15.1642 9.75 15.5 9.41421 15.5 9C15.5 8.58579 15.1642 8.25 14.75 8.25C14.3358 8.25 14 8.58579 14 9C14 9.41421 14.3358 9.75 14.75 9.75Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.25 9.75C4.66421 9.75 5 9.41421 5 9C5 8.58579 4.66421 8.25 4.25 8.25C3.83579 8.25 3.5 8.58579 3.5 9C3.5 9.41421 3.83579 9.75 4.25 9.75Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="_view1">Загрузить еще</span>
+                            <span class="_view2">Скрыть</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -2118,6 +2618,23 @@
                         <a href="" class="footer__logo">
                             <img src="img/logo.svg" alt="">
                         </a>
+                        <div class="header-marketplace">
+                            <div class="header-marketplace__title">
+                                -25% от цены <br>
+        маркетплейса
+                            </div>
+                            <div class="socials">
+                                <a href="" class="socials__item">
+                                    <img src="img/wb.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ozon.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ym.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="footer__col2">
                         <nav class="footer-nav">
@@ -2147,21 +2664,6 @@
                         </nav>
                     </div>
                     <div class="footer__col3">
-                        <div class="socials">
-                            <a href="" class="socials__item">
-                                <img src="img/whatsapp.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/wb.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/ozon.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/ym.svg" alt="">
-                            </a>
-                        </div>
-
                         <div class="footer-contacts">
                             <div class="h5">
                                 <a href="tel:89383597587">8 (938) 359-75-87</a>
@@ -2169,6 +2671,14 @@
                             <div class="text14 text12-tablet gray-text">
                                 пн-вс с 9 до 20 часов
                             </div>
+                        </div>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/max.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>

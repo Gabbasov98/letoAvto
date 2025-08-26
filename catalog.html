@@ -20,6 +20,94 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
+                <div class="header-top-mob">
+                    <div class="header-city _show-question">
+                        <div class="js-toggle-city-select header-city__show">
+                            <img src="img/location.svg" alt="">
+                            <span class="js-city-output text14">Москва</span>
+                        </div>
+
+                        <div class="city-question">
+                            <div class="city-question__title text14 medium-text">
+                                Ваш город Москва?
+                            </div>
+                            <div class="city-question__nav">
+                                <button class="js-confirm-city city-question__btn _green">
+                                    <span class="text16">Да</span>
+                                </button>
+                                <button class="js-reject-city city-question__btn">
+                                    <span class="text16">Нет</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="city-popup">
+                            <div class="city-popup__top">
+                                <button class="js-toggle-city-select city-popup__back green-text">
+                                    <span class="text15">Назад</span>
+                                    <img src="img/back.svg" alt="">
+                                </button>
+                            </div>
+
+                            <form class="header-search">
+                                <input type="text" placeholder="Поиск">
+                                <button class="header-search__btn">
+                                    <img src="img/search-icon.svg" alt="">
+                                </button>
+                            </form>
+                            <button class="city-popup__btn m-btn m-btn-green">
+                                <span>Определить по геолокации</span>
+                                <img src="img/location2.svg" alt="">
+                            </button>
+                            <div class="city-popup__items">
+                                <div class="city-popup__item">
+                                    <input checked type="radio" name="city" data-value="Москва">
+                                    <label><span class="text16">Москва</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Санкт-Петербург">
+                                    <label><span class="text16">Санкт-Петербург</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Казань">
+                                    <label><span class="text16">Казань</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Краснодар">
+                                    <label><span class="text16">Краснодар</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Новосибирск">
+                                    <label><span class="text16">Новосибирск</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Ростов-на-Дону">
+                                    <label><span class="text16">Ростов-на-Дону</span></label>
+                                </div>
+                                <div class="city-popup__item">
+                                    <input type="radio" name="city" data-value="Сочи">
+                                    <label><span class="text16">Сочи</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="header-search">
+                        <input type="text" placeholder="Поиск">
+                        <button class="header-search__btn">
+                            <img src="img/search-icon.svg" alt="">
+                        </button>
+                    </form>
+                    <nav class="nav2">
+                        <a href="" class="nav2__link">
+                            <span class="text12">Онлайн-подбор</span>
+                        </a>
+                        <a href="" class="nav2__link">
+                            <img src="img/percent.svg" alt="">
+                            <span class="text12">Скидки и акции</span>
+                        </a>
+                    </nav>
+                </div>
+
                 <div class="header-top">
                     <div class="header-top__nav">
                         <a href="" class="header-top__logo header__logo">
@@ -190,23 +278,19 @@
                     <div class="header-bottom__col _flex">
                         <button class="_toggle-catalog catalog-btn m-btn m-btn-green">
                             <img src="img/burger.svg" alt="">
-                            <span>Каталог товаров</span>
+                            <span class="_view1">Каталог товаров</span>
+                            <span class="_view2">Каталог</span>
                         </button>
                         <div class="header-bottom__info text14 gray-text">
                             Официальный сайт ателье «АвтоЛето»
                         </div>
                     </div>
-                    <div class="header-contacts header-contacts--desktop">
-                        <div class="header-contacts__time text14 gray-text">
-                            пн-вс с 9 до 20 часов
+                    <div class="header-marketplace">
+                        <div class="header-marketplace__title">
+                            -25% от цены <br>
+        маркетплейса
                         </div>
-                        <a href="tel:89383597587" class="header-contacts__phone h5">
-                            8 (938) 359-75-87
-                        </a>
                         <div class="socials">
-                            <a href="" class="socials__item">
-                                <img src="img/whatsapp.svg" alt="">
-                            </a>
                             <a href="" class="socials__item">
                                 <img src="img/wb.svg" alt="">
                             </a>
@@ -217,14 +301,45 @@
                                 <img src="img/ym.svg" alt="">
                             </a>
                         </div>
-
+                    </div>
+                    <div class="header-contacts header-contacts--desktop">
+                        <div class="header-contacts__text">
+                            <a href="tel:89383597587" class="header-contacts__phone h5">
+                                8 (938) 359-75-87
+                            </a>
+                            <div class="header-contacts__time text14 gray-text">
+                                пн-вс с 9 до 20 часов
+                            </div>
+                        </div>
+                        <div class="header-contacts__links">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/max.svg" alt="">
+                            </a>
+                        </div>
+                        <a href="" class="header-contacts__cart">
+                            <img src="img/cart2.svg" alt="">
+                        </a>
                     </div>
                     <div class="header-mob">
-                        <div class="h5">
-                            8 (938) 359-75-87
+                        <!--            <div class="h5">-->
+                        <!--                8 (938) 359-75-87-->
+                        <!--            </div>-->
+                        <div class="header-mob__contacts">
+                            <a href="" class="h4">
+                                8 (999) 999-99-99
+                            </a>
+                            <div class="text12 gray-text">
+                                пн-вс с 9 до 20 часов
+                            </div>
                         </div>
                         <a href="" class="socials__item">
                             <img src="img/whatsapp2.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/max.svg" alt="">
                         </a>
                         <button class="burger _toggle-menu">
                             <img src="img/burger2.svg" alt="">
@@ -686,7 +801,8 @@
                                 <div class="about-boxberry">
                                     <div class="about-boxberry__top">
                                         <div class="about-boxberry__title">
-                                            Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                                            Удобное получение <br>
+            в пункте выдачи Боксбери
                                         </div>
                                         <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
                                     </div>
@@ -724,74 +840,349 @@
                     <div class="breadcrumbs">
                         <ul>
                             <li><a href="">Главная</a></li>
-                            <li><span>Автомобильные чехлы</span></li>
+                            <li><span>Авточехлы</span></li>
                         </ul>
                     </div>
                     <div class="catalog__top _flex">
                         <h1 class="h2">
-                            Автомобильные чехлы
+                            Авточехлы
                         </h1>
-                        <div class="catalog__count text14 gray-text">
-                            139 товаров
+                    </div>
+
+                    <div class="catalog-progress slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="catalog-progress__hint">
+                                        <span>Выберите марку</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <div class="brands">
+                        <div class="brands__grid">
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img21.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Nissan
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img22.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Porsche
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Audi
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img16.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Hyundai
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img6.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Ford
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img23.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Volkswagen
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img21.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Nissan
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img22.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Porsche
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Audi
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img16.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Hyundai
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img6.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Ford
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Audi
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img23.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Volkswagen
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img16.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Hyundai
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img6.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Ford
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img21.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Nissan
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img22.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Porsche
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Audi
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img16.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Hyundai
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img6.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Ford
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img23.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Volkswagen
+                                </div>
+                            </a>
 
 
-                    <div class="selection">
-                        <form action="" class="selection-form">
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img2.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    BMW
+                                </div>
+                            </a>
 
-                            <div class="fg">
-                                <select>
-                                    <option selected hidden disabled>Марка</option>
-                                    <option>Audi</option>
-                                    <option>BMW</option>
-                                    <option>Brilliance</option>
-                                    <option>BYD</option>
-                                    <option>Chery</option>
-                                    <option>Chevrolet</option>
-                                    <option>Citroen</option>
-                                    <option>Daewoo</option>
-                                    <option>Chery</option>
-                                    <option>Chevrolet</option>
-                                    <option>Citroen</option>
-                                    <option>Daewoo</option>
-                                </select>
-                            </div>
-                            <div class="fg">
-                                <select>
-                                    <option selected hidden disabled>Модель</option>
-                                    <option>Модель 1</option>
-                                    <option>Модель 2</option>
-                                    <option>Модель 3</option>
-                                </select>
-                            </div>
-                            <div class="fg">
-                                <select>
-                                    <option selected hidden disabled>Поколение</option>
-                                    <option>Поколение 1</option>
-                                    <option>Поколение 2</option>
-                                    <option>Поколение 3</option>
-                                </select>
-                            </div>
-                            <div class="fg _col2">
-                                <select>
-                                    <option selected hidden disabled>Комплектация</option>
-                                    <option>Комплектация 1</option>
-                                    <option>Комплектация 2</option>
-                                    <option>Комплектация 3</option>
-                                </select>
-                            </div>
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img3.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Chevrolet
+                                </div>
+                            </a>
 
-                            <button class="selection-form__btn m-btn m-btn-green">
-                                <span>Подобрать чехол</span>
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img4.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Datsun
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img5.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Tank
+                                </div>
+                            </a>
+
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img7.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Haval
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img8.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Geely
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img9.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Mercedes
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img10.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Lexus
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img11.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Citroen
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img12.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Changan
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img13.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Daewoo
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img14.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Jetta
+                                </div>
+                            </a>
+
+                            <a href="" class="car-card">
+                                <div class="car-card__img">
+                                    <img src="img/brand-img15.webp" alt="">
+                                </div>
+                                <div class="car-card__title text14">
+                                    Jac
+                                </div>
+                            </a>
+
+                            <button class="_js-show-all-brands brands__more m-btn m-btn-gray-outline">
+                                <svg class="_view1" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                    <path d="M12.5 13C13.0523 13 13.5 12.5523 13.5 12C13.5 11.4477 13.0523 11 12.5 11C11.9477 11 11.5 11.4477 11.5 12C11.5 12.5523 11.9477 13 12.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.5 13C20.0523 13 20.5 12.5523 20.5 12C20.5 11.4477 20.0523 11 19.5 11C18.9477 11 18.5 11.4477 18.5 12C18.5 12.5523 18.9477 13 19.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5.5 13C6.05228 13 6.5 12.5523 6.5 12C6.5 11.4477 6.05228 11 5.5 11C4.94772 11 4.5 11.4477 4.5 12C4.5 12.5523 4.94772 13 5.5 13Z" stroke="#28CB47" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="_view1">Показать еще </span>
+                                <span class="_view2">Скрыть</span>
                             </button>
-                        </form>
-                        <div class="selection__img">
-                            <img src="img/brand.webp" alt="">
                         </div>
-
                     </div>
+
                     <div class="catalog__inner">
                         <div class="catalog__col">
                             <div class="filter">
@@ -906,7 +1297,7 @@
                                         <div class="filter-group">
                                             <div class="filter-group__top">
                                                 <div class="filter-group__title text16 bold-text">
-                                                    Стиль
+                                                    Цвет
                                                 </div>
                                                 <img src="img/arrow-top.svg" alt="">
                                             </div>
@@ -1006,66 +1397,6 @@
                                         <div class="filter-group">
                                             <div class="filter-group__top">
                                                 <div class="filter-group__title text16 bold-text">
-                                                    Стиль
-                                                </div>
-                                                <img src="img/arrow-top.svg" alt="">
-                                            </div>
-                                            <div class="filter-group__bottom">
-                                                <div class="filter-group__checks">
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Классика</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Спортивный</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Люкс</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Для темного салона</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Яркий</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="m-check">
-                                                        <input type="checkbox">
-                                                        <label>
-                                                            <span>Для светлого салона</span>
-
-                                                        </label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="filter-group">
-                                            <div class="filter-group__top">
-                                                <div class="filter-group__title text16 bold-text">
                                                     Серия
                                                 </div>
                                                 <img src="img/arrow-top.svg" alt="">
@@ -1151,13 +1482,47 @@
                                 </div>
                             </div>
 
+                            <div class="about-boxberry">
+                                <div class="about-boxberry__top">
+                                    <div class="about-boxberry__title">
+                                        Удобное получение <br>
+            в пункте выдачи Боксбери
+                                    </div>
+                                    <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
+                                </div>
+                                <div class="about-boxberry__bottom">
+                                    <div class="about-boxberry__props">
+                                        <div class="about-boxberry__prop">
+                                            <img src="img/prop-icon14.svg" alt="">
+                                            <span class="text14 gray-text">Выгодно с Боксбери</span>
+                                        </div>
+                                        <div class="about-boxberry__prop">
+                                            <img src="img/prop-icon13.svg" alt="">
+                                            <span class="text14 gray-text">Сравните с маркетплейсами выберите лучшую цену</span>
+                                        </div>
+                                        <div class="about-boxberry__prop">
+                                            <img src="img/prop-icon8.svg" alt="">
+                                            <span class="text14 gray-text">Бесплатная доставка</span>
+                                        </div>
+                                        <div class="about-boxberry__prop">
+                                            <img src="img/prop-icon10.svg" alt="">
+                                            <span class="text14 gray-text">Оплата при получении</span>
+                                        </div>
+                                        <div class="about-boxberry__prop">
+                                            <img src="img/prop-icon8.svg" alt="">
+                                            <span class="text14 gray-text">Быстрая Отправка в день заказа</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="cheaper">
                                 <div class="cheaper__text">
-                                    <div class="cheaper__title text16 semi-bold-text">
-                                        Авточехлы на 10-20% дешевле, чем на маркетплейсах
+                                    <div class="cheaper__title text16 bold-text">
+                                        Авточехлы <span class="green-text">на 10-20% дешевле</span>, чем на маркетплейсах
                                     </div>
-                                    <div class="cheaper__desc text14 gray-text">
-                                        Без наценки посредников <br>и комиссии маркетплейсов
+                                    <div class="cheaper__desc text14">
+                                        Без наценки посредников и агентсткой комисси маркетплейсов
                                     </div>
                                 </div>
                                 <div class="socials">
@@ -1174,31 +1539,45 @@
 
                             </div>
 
-                            <div class="about-boxberry">
-                                <div class="about-boxberry__top">
-                                    <div class="about-boxberry__title">
-                                        Получение в пункте Boxberry выгоднее чем на маркетплейсах
+                            <div class="info-card">
+                                <div class="info-card__top">
+                                    <div class="text16 text14-tablet">
+                                        Гайд
                                     </div>
-                                    <img src="img/boxberry2.svg" alt="" class="about-boxberry__img">
+                                    <div class="h5 h4-mob">
+                                        Как самостоятельно подобрать  авточехол
+                                    </div>
                                 </div>
-                                <div class="about-boxberry__bottom">
-                                    <div class="about-boxberry__props">
-                                        <div class="about-boxberry__prop">
-                                            <img src="img/prop-icon8.svg" alt="">
-                                            <span class="text14 gray-text">Отправка в день заказа</span>
-                                        </div>
-                                        <div class="about-boxberry__prop">
-                                            <img src="img/prop-icon9.svg" alt="">
-                                            <span class="text14 gray-text">Бесплатная доставка</span>
-                                        </div>
-                                        <div class="about-boxberry__prop">
-                                            <img src="img/prop-icon10.svg" alt="">
-                                            <span class="text14 gray-text">Оплата при получении</span>
-                                        </div>
-                                    </div>
+                                <div class="info-card__bottom">
+                                    <a href="" class="info-card__link">
+                                        <span>Читать</span>
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info-card__img">
+                                    <img src="img/info-img.webp" alt="">
                                 </div>
                             </div>
 
+                            <div class="info-card info-card--blue">
+                                <div class="info-card__top">
+                                    <div class="text16 text14-tablet">
+                                        Онлайн-подбор
+                                    </div>
+                                    <div class="h5 h4-mob">
+                                        Подберите авточехол, ответив на 4 вопроса
+                                    </div>
+                                </div>
+                                <div class="info-card__bottom">
+                                    <a href="" class="info-card__link">
+                                        <span>Подобрать <br> онлайн</span>
+                                        <img src="img/arrow-right.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="info-card__img">
+                                    <img src="img/info-img2.webp" alt="">
+                                </div>
+                            </div>
                         </div>
                         <div class="catalog__col2">
                             <div class="sort">
@@ -1234,11 +1613,11 @@
                             </div>
                             <div class="cheaper">
                                 <div class="cheaper__text">
-                                    <div class="cheaper__title text16 semi-bold-text">
-                                        Авточехлы на 10-20% дешевле, чем на маркетплейсах
+                                    <div class="cheaper__title text16 bold-text">
+                                        Авточехлы <span class="green-text">на 10-20% дешевле</span>, чем на маркетплейсах
                                     </div>
-                                    <div class="cheaper__desc text14 gray-text">
-                                        Без наценки посредников <br>и комиссии маркетплейсов
+                                    <div class="cheaper__desc text14">
+                                        Без наценки посредников и агентсткой комисси маркетплейсов
                                     </div>
                                 </div>
                                 <div class="socials">
@@ -2003,12 +2382,12 @@
                                         Изготавливаем чехлы строго по лекалам вашей модели авто, поэтому они идеально повторяют форму сидений
                                     </div>
                                 </div>
-                                <ul class="m-list">
+                                <ul class="m-list _big">
                                     <li>
-                                        <div class="text16 text12-tablet">Без зазоров, перекосов, складов и растяжек</div>
+                                        <div class="text16 text14-tablet">Без зазоров, перекосов, складов и растяжек</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Не сползают при езде</div>
+                                        <div class="text16 text14-tablet">Не сползают при езде</div>
                                     </li>
                                 </ul>
                                 <div class="domestic-production__desc2 semi-bold-text">
@@ -2030,13 +2409,13 @@
                                 </div>
                                 <ul class="m-list">
                                     <li>
-                                        <div class="text16 text12-tablet">Дышащие материалы <br> не дают потеть летом</div>
+                                        <div class="text16 text14-tablet">Дышащие материалы не дают потеть летом</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Мягкие ткани сохраняют тепло зимой</div>
+                                        <div class="text16 text14-tablet">Мягкие ткани сохраняют тепло зимой</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Продуманы все отверстия для регулировку сидений и ручек откидывания</div>
+                                        <div class="text16 text14-tablet">Продуманы все отверстия для регулировку сидений и ручек откидывания</div>
                                     </li>
                                 </ul>
                             </div>
@@ -2057,13 +2436,13 @@
                                 </div>
                                 <ul class="m-list">
                                     <li>
-                                        <div class="text16 text12-tablet">Материалы — сертифицированы и протестированы</div>
+                                        <div class="text16 text14-tablet">Материалы — сертифицированы и протестированы</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Раскрой — на профессиональном ЧПУ-оборудовании</div>
+                                        <div class="text16 text14-tablet">Раскрой — на профессиональном ЧПУ-оборудовании</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Швы — усиленные, с двойной строчкой</div>
+                                        <div class="text16 text14-tablet">Швы — усиленные, с двойной строчкой</div>
                                     </li>
                                 </ul>
                             </div>
@@ -2107,6 +2486,34 @@
                     </div>
 
                     <div class="advantages__bottom">
+                        <div class="advantage-card _full domestic-production__inner">
+                            <div class="domestic-production__img">
+                                <img class="_view1" src="img/advantage-img.webp" alt="">
+                                <img class="_view2" src="img/advantage-img-mob.webp" alt="">
+                            </div>
+                            <div class="domestic-production__content">
+                                <div class="h3 h4-mob">
+                                    Прост в уходе <br>
+                    Протёр — и снова как новый
+                                </div>
+                                <ul class="m-list">
+                                    <li>
+                                        <div class="text16 text14-tablet">Чехлы устойчивы к загрязнениям и пятнам</div>
+                                    </li>
+                                    <li>
+                                        <div class="text16 text14-tablet">Не выцветают и не пахнут химией</div>
+                                    </li>
+                                    <li>
+                                        <div class="text16 text14-tablet">Легко чистятся: просто протрите влажной тряпкой</div>
+                                    </li>
+                                </ul>
+                                <div class="domestic-production__desc semi-bold-text">
+                                    <div class="text16 text14-tablet">
+                                        Ваш салон всегда будет выглядеть ухоженно <br>  — даже после длительной поездки или детского «творчества»
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="advantage-card advantage-card--blue domestic-production__inner">
                             <div class="domestic-production__content">
                                 <div class="h3 h4-mob">
@@ -2119,10 +2526,10 @@
                                 </div>
                                 <ul class="m-list">
                                     <li>
-                                        <div class="text16 text12-tablet">Никаких инструментов не нужно</div>
+                                        <div class="text16 text14-tablet">Никаких инструментов не нужно</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Пошаговая видеоинструкция  для каждой модели</div>
+                                        <div class="text16 text14-tablet">Пошаговая видеоинструкция  для каждой модели</div>
                                     </li>
                                 </ul>
                             </div>
@@ -2144,43 +2551,37 @@
                                 </div>
                                 <ul class="m-list">
                                     <li>
-                                        <div class="text16 text12-tablet">Передние и задние чехлы</div>
+                                        <div class="text16 text14-tablet">Передние и задние чехлы</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Все необходимые элементы крепежа</div>
+                                        <div class="text16 text14-tablet">Все необходимые элементы крепежа</div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Заглушки для креплений</div>
+                                        <div class="text16 text14-tablet">Заглушки для креплений</div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="advantage-card _full domestic-production__inner">
                             <div class="domestic-production__img">
-                                <img class="_view1" src="img/advantage-img.webp" alt="">
-                                <img class="_view2" src="img/advantage-img-mob.webp" alt="">
+                                <img class="_view1" src="img/advantage-img6.webp" alt="">
+                                <img class="_view2" src="img/advantage-img6-mob.webp" alt="">
                             </div>
                             <div class="domestic-production__content">
                                 <div class="h3 h4-mob">
-                                    Прост в уходе <br>
-                    Протёр — и снова как новый
+                                    Современное российское <br> производство — гарантия вашей безопасности и комфорта
                                 </div>
-                                <ul class="m-list">
+                                <ul class="m-list _big">
                                     <li>
-                                        <div class="text16 text12-tablet">Чехлы устойчивы к загрязнениям и пятнам</div>
+                                        <div class="text16 text14-tablet">Автоматизированный раскройный комплекс </div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Не выцветают и не пахнут химией</div>
+                                        <div class="text16 text14-tablet">Современное швейное оборудование </div>
                                     </li>
                                     <li>
-                                        <div class="text16 text12-tablet">Легко чистятся: просто протрите влажной тряпкой</div>
+                                        <div class="text16 text14-tablet">Профессиональные программы для обработки лекал </div>
                                     </li>
                                 </ul>
-                                <div class="domestic-production__desc semi-bold-text">
-                                    <div class="text16 text14-tablet">
-                                        Ваш салон всегда будет выглядеть ухоженно <br>  — даже после длительной поездки или детского «творчества»
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -2247,6 +2648,23 @@
                         <a href="" class="footer__logo">
                             <img src="img/logo.svg" alt="">
                         </a>
+                        <div class="header-marketplace">
+                            <div class="header-marketplace__title">
+                                -25% от цены <br>
+        маркетплейса
+                            </div>
+                            <div class="socials">
+                                <a href="" class="socials__item">
+                                    <img src="img/wb.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ozon.svg" alt="">
+                                </a>
+                                <a href="" class="socials__item">
+                                    <img src="img/ym.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="footer__col2">
                         <nav class="footer-nav">
@@ -2276,21 +2694,6 @@
                         </nav>
                     </div>
                     <div class="footer__col3">
-                        <div class="socials">
-                            <a href="" class="socials__item">
-                                <img src="img/whatsapp.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/wb.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/ozon.svg" alt="">
-                            </a>
-                            <a href="" class="socials__item">
-                                <img src="img/ym.svg" alt="">
-                            </a>
-                        </div>
-
                         <div class="footer-contacts">
                             <div class="h5">
                                 <a href="tel:89383597587">8 (938) 359-75-87</a>
@@ -2298,6 +2701,14 @@
                             <div class="text14 text12-tablet gray-text">
                                 пн-вс с 9 до 20 часов
                             </div>
+                        </div>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/max.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
