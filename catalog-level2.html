@@ -982,8 +982,44 @@
                     <div class="catalog__inner">
                         <div class="catalog__col">
                             <div class="filter">
+                                <div class="filter__top">
+                                    <div class="h5">
+                                        Фильтр
+                                    </div>
+                                    <button class="filter__close _toggle-filter">
+                                        <img src="img/close.svg" alt="">
+                                    </button>
+                                </div>
                                 <div class="filter__scroll">
                                     <div class="filter__groups">
+                                        <div class="sort">
+                                            <div class="sort__title body-s gray-text">
+                                                Сортировать по:
+                                            </div>
+
+                                            <div class="sort-dropdown">
+                                                <div class="sort-dropdown__show">
+                                                    <div class="body-s _current">Сначала дешевые</div>
+                                                    <img src="img/sort.svg" alt="">
+                                                </div>
+                                                <div class="sort-dropdown__hidden">
+                                                    <div class="sort__items">
+                                                        <div class="sort-item">
+                                                            <input type="radio" name="sortType" checked data-value="Сначала дешевые">
+                                                            <label>
+                                                                <span class="body-s">Сначала дешевые</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="sort-item">
+                                                            <input type="radio" name="sortType" data-value="Сначала популярные">
+                                                            <label>
+                                                                <span class="body-s">Сначала популярные</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="filter-group">
                                             <div class="filter-group__top">
                                                 <div class="filter-group__title text16 bold-text">
@@ -1267,16 +1303,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="filter__nav">
-                                        <button class="filter__btn m-btn m-btn-green">
-                                            <span>Применить</span>
-                                        </button>
-                                        <button class="filter__btn m-btn m-btn-green-outline">
-                                            <span>Сбросить фильтр</span>
-                                        </button>
-                                    </div>
+                                </div>
+                                <div class="filter__nav">
+                                    <button class="filter__btn m-btn m-btn-green">
+                                        <span>Применить</span>
+                                    </button>
+                                    <button class="filter__btn m-btn m-btn-green-outline">
+                                        <span>Сбросить фильтр</span>
+                                    </button>
                                 </div>
                             </div>
+
 
                             <div class="about-boxberry">
                                 <div class="about-boxberry__top">
@@ -1372,37 +1409,15 @@
                             </div>
                         </div>
                         <div class="catalog__col2">
-                            <div class="sort">
-                                <div class="sort__title">
-                                    Сортировать:
-                                </div>
-                                <div class="sort__items">
-                                    <div class="m-check">
-                                        <input type="checkbox">
-                                        <label>
-                                            <span>Сначала новое</span>
-
-                                        </label>
-                                    </div>
-
-                                    <div class="m-check">
-                                        <input type="checkbox">
-                                        <label>
-                                            <span>Сначала дешевые</span>
-
-                                        </label>
-                                    </div>
-
-                                    <div class="m-check">
-                                        <input type="checkbox">
-                                        <label>
-                                            <span>Со скидкой</span>
-
-                                        </label>
-                                    </div>
-
-                                </div>
+                            <div class="filter2">
+                                <button class="filter2__btn _toggle-filter m-btn m-btn-green-outline">
+                                    <img src="img/filter.svg" alt="">
+                                    <span class="body-s">Показать фильтр</span>
+                                    <i><span>2</span></i>
+                                </button>
                             </div>
+
+
                             <div class="cheaper">
                                 <div class="cheaper__text">
                                     <div class="cheaper__title text16 bold-text">
